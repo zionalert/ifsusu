@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'helveticaB';
-    src:url(../fonts/helveticaB.otf);
+	font-family: 'helveticaBold';
+    src:url(../fonts/HelveticaNeueCyr-Bold.otf);
 }
 @font-face {
-	font-family: 'helveticaL';
-    src:url(../fonts/helveticaL.otf);
+	font-family: 'helveticaThin';
+    src:url(../fonts/HelveticaNeueCyr-Thin.otf);
 }
 @font-face {
-	font-family: 'helveticaEL';
-    src:url(../fonts/helveticaEL.otf);
+	font-family: 'helveticaRoman';
+    src:url(../fonts/HelveticaNeueCyr-Roman.otf);
 }
 
-$font-main: 'helveticaL';
-$font-el: 'helveticaEL';
-$font-b: 'helveticaB';
+$font-bold: 'helveticaBold';
+$font-roman: 'helveticaRoman';
+$font-thin: 'helveticaThin';

@@ -1,9 +1,9 @@
 * {
-	-webkit-transition: all .2s;
-	   -moz-transition: all .2s;
-	    -ms-transition: all .2s;
-	     -o-transition: all .2s;
-	        transition: all .2s;
+	-webkit-transition: all .1s;
+	   -moz-transition: all .1s;
+	    -ms-transition: all .1s;
+	     -o-transition: all .1s;
+	        transition: all .1s;
 	box-sizing: border-box;
 
 }
@@ -12,8 +12,8 @@
 body {
 	background: $main-white-background;
 	color: $main-black;
-	min-width: 960px;
-	font-family: $font-main, sans-serif;
+	min-width: 1020px;
+	font-family: $font-roman, sans-serif;
 }
 
 .header {
