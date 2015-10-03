@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'helveticaB';
+  src: url(../fonts/helveticaB.otf);
+}
+
+@font-face {
+  font-family: 'helveticaL';
+  src: url(../fonts/helveticaL.otf);
+}
+
+@font-face {
+  font-family: 'helveticaEL';
+  src: url(../fonts/helveticaEL.otf);
+}
+
+* {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "helveticaL", sans-serif;
+}
+
+.content {
+  margin: auto;
+  width: 960px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+}
