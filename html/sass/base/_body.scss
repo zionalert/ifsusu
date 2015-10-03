@@ -5,9 +5,20 @@
 	     -o-transition: all .2s;
 	        transition: all .2s;
 	box-sizing: border-box;
+
 }
 
 
 body {
+	background: $main-white-background;
+	color: $main-black;
+	min-width: 960px;
 	font-family: $font-main, sans-serif;
+}
+
+.header {
+	cursor: default;
+}
+.button {
+	cursor: pointer;
 }
