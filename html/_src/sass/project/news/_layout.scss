@@ -1,0 +1,22 @@
+.news {
+
+	.content {
+		padding: 30px;
+		
+		background: $white;
+		margin-top: -50px;
+		@include material-shadow(1);
+	}
+	.news-tab {
+		@include inline-top(1);
+		margin-top: 30px;
+		width: 66.9%;
+	}
+	.messages-tab {
+		@include inline-top(1);
+		margin-top: 30px;
+		&:last-child {
+			margin-left: 30px;
+		}
+	}
+}

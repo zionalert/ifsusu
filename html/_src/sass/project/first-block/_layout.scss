@@ -1,0 +1,25 @@
+.first-block {
+background: linear-gradient(to right, #fbfbfb 10%, #fdfdfd 100%);
+	&-bg {
+
+		background:transparent url('../img/first-block/bg-big.png') center top no-repeat;
+		
+		padding-bottom: 100px;
+	}
+}
+
+.descript {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	// ************************************
+	// LAYOUT 
+	// 
+	.left-block {
+		width: 70%;
+		@include inline-top(1);
+	}
+	.right-block {
+		width: 29.53%;
+		@include inline-top(1);
+	}
+}
