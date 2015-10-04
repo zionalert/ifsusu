@@ -1,8 +1,9 @@
 .descript {
 	padding-top: 100px;
 	padding-bottom: 100px;
-
+	// ************************************
 	// LAYOUT 
+	// 
 	.left-block {
 		width: 70%;
 		@include inline-top(1);
@@ -11,7 +12,9 @@
 		width: 29.53%;
 		@include inline-top(1);
 	}
+	// ************************************
 	// ELEMENTS
+	// 
 	&-h1 {
 		padding: 0;
 		margin: 0;
@@ -30,6 +33,7 @@
 		line-height: 30px;
 		font-family: $font-thin;
 		font-weight: normal;
+		text-shadow: 0px 0px 5px $main-white;
 	}
 	&-hr {
 		margin-top: 25px;
@@ -37,7 +41,9 @@
 		height: 3px;
 		background: lighten($main-gray, 30%);
 	}
+	// **************************************
 	// RIGHT BLOCK
+	// 
 	&-notify {
 		width: 100%;
 		cursor: default;
@@ -74,9 +80,9 @@
 				width: 20%;
 				font-family: $font-roman;
 				text-align: left;
-
+				
 				.day {
-					font-family: $font-thin;
+				
 					font-size: 50px;
 					line-height: 40px;
 				}
