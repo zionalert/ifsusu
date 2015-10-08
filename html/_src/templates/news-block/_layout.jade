@@ -1,5 +1,9 @@
 .news
 	.content
-		include _tabs.jade
-		include _tab-news.jade
-		include _tab-messages.jade
+		.news-h1 
+			i.fa.fa-newspaper-o
+			| Новости
+		
+		include _news-posts-last.jade
+		include _news-posts-before.jade
+		include _news-messages.jade

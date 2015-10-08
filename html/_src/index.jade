@@ -21,18 +21,30 @@ html(lang='ru')
         link(rel='stylesheet', href='css/main.css')
         // font icons
         link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css')
-        script(src='js/jq191.min.js')
+        script(src='js/vendor/jq191.min.js')
         script(src='js/vendor/angular.min.js')
-        script(src='js/angular/controllers.js')
+        script(src='js/vendor/angular/controllers.js')
                 
     body
         //- FIRST BLOCK
         include templates/first-block/_layout.jade
 
+        .body-second-block    
+            //- UNIVERS 
+            include templates/education-block/_layout.jade
+
+        //- TRIGGERS
+        include templates/triggers-block/_layout.jade
+
         //- NEWS
         include templates/news-block/_layout.jade
 
+        //- CONTACTS 
+        include templates/contact-block/_layout.jade
 
-        script(src='js/fastclick.min.js')
+        //- FOOTER 
+        include templates/footer-block/_layout.jade
+
+        script(src='js/vendor/fastclick.min.js')
         script(src='js/main.js')
         // Подклбючить веб-аналитику

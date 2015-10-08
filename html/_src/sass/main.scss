@@ -4,6 +4,7 @@
 @import 'vendor/normalize.scss';
 
 
+
 // BASE
 // ===================================
 @import 'base/fonts.scss';
@@ -26,8 +27,32 @@
 
 // ***********************************
 // NEWS
-@import 'project/news/layout.scss';
-@import 'project/news/tabs.scss';
-@import 'project/news/tab-news.scss';
-@import 'project/news/tab-messages.scss';
+@import 'project/news-block/layout.scss';
+@import 'project/news-block/news-posts-last.scss';
+@import 'project/news-block/news-posts-before.scss';
+@import 'project/news-block/news-messages.scss';
+
+
+// ***********************************
+// EDUCATION
+@import 'project/education-block/layout.scss';
+@import 'project/education-block/layout.scss';
+@import 'project/education-block/layout.scss';
+
+
+// ***********************************
+// TRIGGERS
+@import 'project/triggers-block/layout.scss';
+
+
+// ***********************************
+// CONTACT
+@import 'project/contact-block/layout.scss';
+
+
+// ***********************************
+// FOOTER
+@import 'project/footer-block/layout.scss';
+
+
 

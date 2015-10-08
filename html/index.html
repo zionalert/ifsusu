@@ -21,9 +21,9 @@
     <link rel="stylesheet" href="css/main.css">
     <!-- font icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <script src="js/jq191.min.js"></script>
+    <script src="js/vendor/jq191.min.js"></script>
     <script src="js/vendor/angular.min.js"></script>
-    <script src="js/angular/controllers.js"></script>
+    <script src="js/vendor/angular/controllers.js"></script>
   </head>
   <body>
     <div class="first-block">
@@ -32,10 +32,10 @@
           <div class="content"><a href="/">
               <div class="header-logo">
                 <!-- placehold.it - img-->
+              </div></a><a href="http://susu.ru" target="_blank">		
+              <div class="header-logo-susu">
+                <!-- placehold.it - img-->
               </div></a>
-            <div class="header-logo-susu">
-              <!-- placehold.it - img-->
-            </div>
             <div class="header-menu">
               <nav>
                 <ul>
@@ -88,65 +88,133 @@
         </div>
       </div>
     </div>
-    <div class="news">
-      <div class="content">
-        <div class="news-tabs"> 
-          <div class="news-tabs-item">
-            <div class="news-tabs-item-h1"><i class="fa fa-newspaper-o"></i>Новости</div>
+    <div class="body-second-block">   
+      <div class="education">
+        <div class="content"></div>
+      </div>
+    </div>
+    <div class="triggers">
+      <div class="content"> 
+        <div class="triggers-left">
+          <div class="triggers-line">
+            <div class="triggers-item-it triggers-square">
+              <p>Современные<br>IT-технологии</p>
+            </div>
+            <div class="triggers-item-home triggers-rectangle">
+              <p>Помощь иногородним студентам<br>по вопросу жилья</p>
+            </div>
           </div>
-        </div>
-        <div class="news-tab">
-          <div class="news-tab-lastnews">
-            <div class="news-tab-lastnews-img"><img src="http://lorempixel.com/300/200/business" alt=""></div>
-            <div class="news-tab-lastnews-h1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, dolores.</div>
-            <div class="news-tab-lastnews-h2">Инструменты проектного управления, возможности построения детальных моделей развития...</div>
-            <div class="news-tab-lastnews-date">28 Сентября 2015</div>
-          </div>
-          <div class="news-tab-beforenews">
-            <div class="news-tab-beforenews-item">
-              <div class="news-tab-beforenews-item-link">Читать все новости<i class="fa fa-newspaper-o"></i></div>
+          <div class="triggers-line">
+            <div class="triggers-item-team triggers-rectangle">
+              <p>Высококвалифицированный<br>педагогически состав</p>
             </div>
-            <div class="news-tab-beforenews-item">
-              <div class="news-tab-beforenews-item-h1"> Lorem ipsum dolor sit amet, consectetur.</div>
-              <div class="news-tab-beforenews-item-date">20 Сентября 2015</div>
-            </div>
-            <div class="news-tab-beforenews-item">
-              <div class="news-tab-beforenews-item-h1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, voluptatibus.</div>
-              <div class="news-tab-beforenews-item-date">20 Сентября 2015</div>
-            </div>
-            <div class="news-tab-beforenews-item">
-              <div class="news-tab-beforenews-item-h1"> Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
-              <div class="news-tab-beforenews-item-date">20 Сентября 2015</div>
+            <div class="triggers-item-fun triggers-square">
+              <p>Программы<br>внеучебной жизни</p>
             </div>
           </div>
         </div>
-        <div class="messages-tab"> 
-          <div class="messages-tab-h1"><i class="fa fa-bell-o"></i>Оповещения</div>
-          <div class="messages-tab-item">
-            <div class="messages-tab-item-date">
-              <div class="day">03</div>
-              <div class="month">Сентбяря</div>
-            </div>
-            <div class="messages-tab-item-h1">Шафутинский перевернет календарь</div>
-          </div>
-          <div class="messages-tab-item">
-            <div class="messages-tab-item-date">
-              <div class="day">04</div>
-              <div class="month">Сентбяря</div>
-            </div>
-            <div class="messages-tab-item-h1">Шафутинский перевернул календарь</div>
-          </div>
-          <div class="messages-tab-item">
-            <div class="messages-tab-item-date">
-              <div class="day">03</div>
-              <div class="month">Сентбяря</div>
-            </div>
-            <div class="messages-tab-item-h1">И снова 3 сентября</div>
+        <div class="triggers-right">
+          <div class="triggers-item-wandt triggers-verticalrect">
+            <p>«Work & Travel»<br></p>
+            <p>Программа зарубежного<br>обучения</p>
           </div>
         </div>
       </div>
     </div>
-    <script src="js/fastclick.min.js"></script>
+    <div class="news">
+      <div class="content">
+        <div class="news-h1"> <i class="fa fa-newspaper-o"></i>Новости</div>
+        <div class="news-posts-last">
+          <div class="news-posts-last-img"><img src="http://lorempixel.com/300/200/business" alt=""></div>
+          <div class="news-posts-last-h1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, dolores.</div>
+          <div class="news-posts-last-h2">Инструменты проектного управления, возможности построения детальных моделей развития...</div>
+          <div class="news-posts-last-date">28 Сентября 2015</div>
+        </div>
+        <div class="news-posts-before">
+          <div class="news-posts-before-item">
+            <div class="news-posts-before-item-link">Читать все новости<i class="fa fa-newspaper-o"></i></div>
+          </div>
+          <div class="news-posts-before-item">
+            <div class="news-posts-before-item-h1"> Lorem ipsum dolor sit amet, consectetur.</div>
+            <div class="news-posts-before-item-date">20 Сентября 2015</div>
+          </div>
+          <div class="news-posts-before-item">
+            <div class="news-posts-before-item-h1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, voluptatibus.</div>
+            <div class="news-posts-before-item-date">20 Сентября 2015</div>
+          </div>
+          <div class="news-posts-before-item">
+            <div class="news-posts-before-item-h1"> Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
+            <div class="news-posts-before-item-date">20 Сентября 2015</div>
+          </div>
+        </div>
+        <div class="news-messages"> 
+          <div class="news-messages-h1"><i class="fa fa-bell-o"></i>Оповещения</div>
+          <div class="news-messages-item">
+            <div class="news-messages-item-date">
+              <div class="day">03</div>
+              <div class="month">Сентбяря</div>
+            </div>
+            <div class="news-messages-item-h1">Шафутинский перевернет календарь</div>
+          </div>
+          <div class="news-messages-item">
+            <div class="news-messages-item-date">
+              <div class="day">04</div>
+              <div class="month">Сентбяря</div>
+            </div>
+            <div class="news-messages-item-h1">Шафутинский перевернул календарь</div>
+          </div>
+          <div class="news-messages-item">
+            <div class="news-messages-item-date">
+              <div class="day">03</div>
+              <div class="month">Сентбяря</div>
+            </div>
+            <div class="news-messages-item-h1">И снова 3 сентября</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact">
+      <div class="content">
+        <div class="contact-h1">Контакты</div>
+        <div class="contact-hr"></div>
+        <div class="contact-left">
+          <div class="contact-adres contact-block-h1"><i class="fa fa-map-marker"> </i>Адрес</div>
+          <p class="contact-adres-text contact-block-text">
+            г. Челябниск, 454080,<br>
+            пр. Ленина 76 (Восточное Крыло)<br>
+            Кабинет №158
+          </p>
+        </div>
+        <div class="contact-right">
+          <div class="contact-phone contact-block-h1"><i class="fa fa-phone"></i>Единый справочный телефон</div>
+          <p class="contact-phone-text contact-block-text">8 904 805 0000<a href="#">
+               
+              Смотреть все телефоны <i class="fa fa-chevron-right"></i></a></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="content">
+        <div class="footer-logo"><img src="img/logo.png" alt=""><span>
+             
+            Южно-Уральский Государственный Университет<br>Международный Факультет</span></div>
+        <div class="footer-sitemap">
+          <div class="footer-sitemap-block">
+            <div class="footer-sitemap-item">Общие положения</div>
+            <div class="footer-sitemap-item">Карта сайта</div>
+            <div class="footer-sitemap-item">Lorem ipsum</div>
+          </div>
+          <div class="footer-sitemap-block">
+            <div class="footer-sitemap-item">Общие положения</div>
+            <div class="footer-sitemap-item">Карта сайта</div>
+          </div>
+        </div>
+        <div class="footer-headera"><a href="http://headera.ru" target="_blank">
+            <p>Разработка сайта</p>
+            <div class="footer-headera-logo">headera.ru</div></a></div>
+      </div>
+    </div>
+    <script src="js/vendor/fastclick.min.js"></script>
     <script src="js/main.js"></script>
     <!-- Подклбючить веб-аналитику-->
   </body>

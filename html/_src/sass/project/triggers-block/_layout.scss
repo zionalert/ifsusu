@@ -1,0 +1,142 @@
+.triggers {
+	.content {
+		text-align: center;
+	}
+	// LAYOUT
+	&-left {
+		width: 620px;
+		@include inline-top(1);
+	}
+	&-right {
+		width: 320px;
+		margin-left: 15px;
+		@include inline-top(1);
+	}
+	&-line {
+		margin-top: 17px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	&-square {
+		position: relative;
+		width: 200px;
+		height: 200px;
+		@include inline-top(1);
+
+		&:last-child {
+			margin-left: 15px;
+		}
+	}
+	&-rectangle {
+		position: relative;
+		width: 400px;
+		height: 200px;
+		margin-left: 15px;
+		@include inline-top(1);
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+	&-verticalrect {
+		position: relative;
+		height: 417px;
+	}
+	// ---
+	// CONTENT
+	&-item {
+		&-item {
+			cursor: pointer;
+		}
+		&-p {
+			position: absolute;
+			bottom: 30px;
+			width: 100%;
+			text-align: center;
+			color: $white;
+			font-size: 12px;
+			font-family: $font-light;
+			line-height: 15px;
+			letter-spacing: .7px;
+		}
+			
+		&:hover {
+			p {
+				transform: translateY(-25%);
+			}
+		}
+		&-it {
+			background: url(../img/triggers/it.png) center center no-repeat;
+			@extend .triggers-item-item;
+
+			p {
+				@extend .triggers-item-p;
+			}
+			&:hover {
+				@extend .triggers-item:hover;
+			}
+		}
+		&-home {
+			background: url(../img/triggers/home.png) center center no-repeat;
+			@extend .triggers-item-item;
+
+			p {
+				@extend .triggers-item-p;
+			}
+			&:hover {
+				@extend .triggers-item:hover;
+			}
+		}
+		&-team {
+			background: url(../img/triggers/team.png) center center no-repeat;
+			@extend .triggers-item-item;
+
+			p {
+				@extend .triggers-item-p;
+			}
+			&:hover {
+				@extend .triggers-item:hover;
+			}
+		}
+		&-fun {
+			background: url(../img/triggers/fun.png) center center no-repeat;
+			@extend .triggers-item-item;
+
+			p {
+				@extend .triggers-item-p;
+			}
+			&:hover {
+				@extend .triggers-item:hover;
+			}
+		}
+		&-wandt {
+			cursor: pointer;
+			background: url(../img/triggers/wandt.png) center top no-repeat;
+			background-size: cover;
+			text-align: center;
+			background-size: 100%;
+			&:hover {
+				background-size: 105%;
+
+			}
+			p {
+				color: $white;
+				font-family: $font-thin;
+				font-size: 25px;
+				padding-top: 175px;
+				&:last-child {
+					padding-top: 0;
+					margin-top: 30px;
+					line-height: 20px;
+					font-size: 15px;
+					font-family: $font-light;
+					letter-spacing: .7px;
+				}
+				
+			}
+		}
+	}
+	// ---
+}

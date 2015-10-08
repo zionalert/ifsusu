@@ -1,0 +1,44 @@
+.news-posts-before {
+
+
+	&-item {
+		margin-top: 20px;
+		padding-bottom: 20px;
+		border-bottom: 1px solid lighten($main-gray, 30%);
+
+		&:first-child {
+			margin-top: 0;
+		}
+		&:last-child {
+			padding-bottom: 0;
+			border-bottom: 0 solid lighten($main-gray, 30%);
+		}
+		&-h1 {
+			cursor: pointer;
+			text-align: justify;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		&-date {
+			@extend .news-posts-last-date;
+		}
+		&-link {
+			padding: 15px;
+			cursor: pointer;
+			color: $main-blue;
+			border: 1px solid;
+			border-radius: 2px;
+
+			i {
+				float: right;
+			}
+			&:hover {
+				transform: translateY(1px);
+			}
+			&:active {
+				transform: translateY(3px);
+			}
+		}
+	}
+}

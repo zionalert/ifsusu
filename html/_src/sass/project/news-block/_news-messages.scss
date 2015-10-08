@@ -1,10 +1,8 @@
-.messages-tab  {
-	// @include material-shadow(1);
+.news-messages  {
 	padding: 15px;
 	border: 1px solid lighten($main-gray, 30%);
 	border-radius: 2px;
-	width: 29.5%;
-	margin-left: 30px;
+
 
 	&-h1 {
 		color: $main-blue;

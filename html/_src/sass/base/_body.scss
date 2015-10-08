@@ -5,14 +5,18 @@
 	-o-transition: all .1s;
 	transition: all .1s;
 	box-sizing: border-box;
+
 }
 body {
 	background: $main-white-background;
 	color: $main-black;
-	min-width: 1020px;
+	
 	font-family: $font-roman, sans-serif;
 	cursor: default;
-	padding-bottom: 50px;
+	min-width: 1020px;
+	.body-second-block {
+		margin-top: -50px;
+	}
 
 }
 .header {
@@ -24,3 +28,6 @@ body {
 
 	cursor: pointer;
 }
+
+
+

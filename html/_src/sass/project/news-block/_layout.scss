@@ -1,0 +1,38 @@
+.news {
+	
+	.content {
+		padding: 30px;
+		background: $white;
+		
+		@include material-shadow(1);
+		font-size: 15px;
+		* {
+			::selection { background: none; }
+		}
+	}
+
+	.news-h1 {
+		font-size: 30px;
+		letter-spacing: .5px;
+		font-family: $font-light;
+		border-bottom: 1px solid lighten($main-gray, 30%);
+		padding-bottom: 30px;
+		i {
+			padding-right: 15px;
+			color: $main-blue;
+			@include inline-bot(1);
+		}
+	}
+
+	&-posts-last,
+	&-posts-before,
+	&-messages {
+		@include inline-top(1);
+		width: 300px;
+		margin-top: 30px;
+		margin-left: 25.56px;
+	}
+	&-posts-last {
+		margin-left: 0;
+	}
+}
