@@ -32,6 +32,23 @@
 		nav {
 			ul {
 				li {
+					a {
+						text-decoration: none;
+						color: $main-black;
+						&:hover {
+							padding-top: 7px;
+							border-top: 2px solid $main-blue;
+							color: $main-blue;
+						}
+						&:active {
+							@extend &:hover;
+							color: $main-gray;
+							.fa {
+								color: $main-gray;
+							}
+							border-top: 2px solid $main-gray;
+						}		
+					}
 					@include inline-mid(1);
 					margin-top: -10px;
 					margin-right: 15px;
@@ -41,19 +58,7 @@
 					&:last-child {
 						margin-right: -15px;
 					}
-					&:hover {
-						padding-top: 7px;
-						border-top: 2px solid $main-blue;
-						color: $main-blue;
-					}
-					&:active {
-						@extend &:hover;
-						color: $main-gray;
-						.fa {
-							color: $main-gray;
-						}
-						border-top: 2px solid $main-gray;
-					}
+
 				}
 			}
 		}

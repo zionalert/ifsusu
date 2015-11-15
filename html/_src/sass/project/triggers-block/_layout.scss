@@ -1,19 +1,26 @@
 .triggers {
+	background: transparent url('../img/triggers/bg.png') center center no-repeat;
+	background-size: cover;
+
 	.content {
+		margin-top: 50px;
 		text-align: center;
 	}
 	// LAYOUT
 	&-left {
 		width: 620px;
+		margin-top: 50px;
 		@include inline-top(1);
 	}
 	&-right {
 		width: 320px;
+		margin-top: 50px;
 		margin-left: 15px;
 		@include inline-top(1);
 	}
 	&-line {
 		margin-top: 17px;
+		border-radius: 2px;
 
 		&:first-child {
 			margin-top: 0;
@@ -23,7 +30,9 @@
 		position: relative;
 		width: 200px;
 		height: 200px;
+		border-radius: 2px;
 		@include inline-top(1);
+		@include material-shadow-ave(.7);
 
 		&:last-child {
 			margin-left: 15px;
@@ -34,7 +43,9 @@
 		width: 400px;
 		height: 200px;
 		margin-left: 15px;
+		border-radius: 2px;
 		@include inline-top(1);
+		@include material-shadow-ave(.7);
 
 		&:first-child {
 			margin-left: 0;
@@ -43,25 +54,36 @@
 	&-verticalrect {
 		position: relative;
 		height: 417px;
+		border-radius: 2px;
+		@include material-shadow-ave(.7);
 	}
 	// ---
 	// CONTENT
+	&-h1 {
+		font-family: $font-bold;
+		font-size: 50px;
+		line-height: 55px;
+		padding-bottom: 50px;
+		text-align: left;
+		letter-spacing: 1px;
+		color: $main-white;
+		border-bottom: 2px solid rgba($main-white, .2);
+		text-shadow: 0 3px 3px #333;
+	}
 	&-item {
-		&-item {
-			cursor: pointer;
-		}
-		&-p {
+		cursor: pointer;
+
+		p {
+			font-family: $font-light;
+			font-size: 12px;
+			line-height: 15px;
 			position: absolute;
 			bottom: 30px;
 			width: 100%;
 			text-align: center;
-			color: $white;
-			font-size: 12px;
-			font-family: $font-light;
-			line-height: 15px;
 			letter-spacing: .7px;
+			color: $main-white;
 		}
-			
 		&:hover {
 			p {
 				transform: translateY(-25%);
@@ -69,73 +91,117 @@
 		}
 		&-it {
 			background: url(../img/triggers/it.png) center center no-repeat;
-			@extend .triggers-item-item;
-
-			p {
-				@extend .triggers-item-p;
-			}
-			&:hover {
-				@extend .triggers-item:hover;
-			}
 		}
 		&-home {
 			background: url(../img/triggers/home.png) center center no-repeat;
-			@extend .triggers-item-item;
-
-			p {
-				@extend .triggers-item-p;
-			}
-			&:hover {
-				@extend .triggers-item:hover;
-			}
 		}
 		&-team {
 			background: url(../img/triggers/team.png) center center no-repeat;
-			@extend .triggers-item-item;
-
-			p {
-				@extend .triggers-item-p;
-			}
-			&:hover {
-				@extend .triggers-item:hover;
-			}
 		}
 		&-fun {
 			background: url(../img/triggers/fun.png) center center no-repeat;
-			@extend .triggers-item-item;
-
-			p {
-				@extend .triggers-item-p;
-			}
-			&:hover {
-				@extend .triggers-item:hover;
-			}
 		}
 		&-wandt {
 			cursor: pointer;
+			text-align: center;
 			background: url(../img/triggers/wandt.png) center top no-repeat;
 			background-size: cover;
-			text-align: center;
 			background-size: 100%;
+
 			&:hover {
 				background-size: 105%;
-
 			}
 			p {
-				color: $white;
 				font-family: $font-thin;
 				font-size: 25px;
 				padding-top: 175px;
+				color: $main-white;
+
 				&:last-child {
-					padding-top: 0;
-					margin-top: 30px;
-					line-height: 20px;
-					font-size: 15px;
 					font-family: $font-light;
+					font-size: 15px;
+					line-height: 20px;
+					margin-top: 30px;
+					padding-top: 0;
 					letter-spacing: .7px;
 				}
-				
 			}
+		}
+	}
+	&-stats {
+		margin-top: 50px;
+		border-radius: 2px;
+
+		&-items {
+			&-item {
+				margin-left: 15px;
+				color: $main-white;
+				text-shadow: 0 3px 3px #333;
+				width: 175px;
+				@include inline-top(1);
+
+				&:first-child {
+					margin-left: 0;
+				}
+				i {
+					font-size: 100px;
+					opacity: .6;
+				}
+				p {
+					margin-top: 25px;
+
+					&.first {
+						font-family: $font-bold;
+						font-size: 30px;
+					}
+					&.second {
+						font-family: $font-light;
+						font-size: 15px;
+						margin-top: 5px;
+						letter-spacing: 1px;
+						line-height: 20px;
+					}
+				}
+				&:hover {
+					transform: translateY(-2px);
+					i {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		&-h1 {
+			font-family: $font-thin;
+			font-size: 30px;
+			padding-bottom: 15px;
+			text-align: left;
+			letter-spacing: 1px;
+			color: $main-white;
+			border-bottom: 1px solid;
+		}
+	}
+	&-button {
+		@include inline-mid(1);
+		font-family: $font-light;
+		font-size: 15px;
+		margin-top: 50px;
+		padding: 25px 50px;
+		cursor: pointer;
+		letter-spacing: .5px;
+		color: $main-white;
+		// border-bottom: 5px solid darken($main-blue, 10%);
+		border-radius: 50px;
+		// border-bottom-left-radius: 5px;
+		// border-bottom-right-radius: 5px;
+		background: $main-blue;
+		@include material-shadow-a-ave(.4);
+		@include hover-trans(1);
+
+		&::selection {
+			background: none;
+		}
+		i {
+			margin-right: 10px;
 		}
 	}
 	// ---
