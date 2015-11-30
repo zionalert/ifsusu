@@ -1,0 +1,54 @@
+// BASE
+// ===================================================================
+@import '../vendor/reset.scss';
+@import '../vendor/normalize.scss';
+// 
+// BASE
+// ===================================================================
+@import '../base/fonts.scss';
+@import '../base/colors.scss';
+@import '../base/body.scss';
+@import '../base/buttons.scss';
+@import '../base/mixins.scss';
+
+
+// ===================================================================
+// *** INDEX PAGE
+// 
+		@import 'index-page/layout.scss';
+// *******************************************************************
+// FIRSTBLOCK
+		@import 'index-page/first-block/layout.scss';
+		@import 'index-page/first-block/header.scss';
+		@import 'index-page/first-block/descript.scss';
+		@import 'index-page/first-block/notify.scss';
+		@import 'index-page/first-block/feedback.scss';
+// 
+// *******************************************************************
+// NEWS
+		@import 'index-page/news-block/layout.scss';
+		@import 'index-page/news-block/news-posts-last.scss';
+		@import 'index-page/news-block/news-posts-before.scss';
+		@import 'index-page/news-block/news-messages.scss';
+// 
+// *******************************************************************
+// EDUCATION
+		@import 'index-page/education-block/layout.scss';
+		@import 'index-page/education-block/items.scss';
+		@import 'index-page/education-block/layout.scss';
+// 
+// *******************************************************************
+// TRIGGERS
+		@import 'index-page/triggers-block/layout.scss';
+// 
+// *******************************************************************
+// CONTACT
+		@import 'index-page/contact-block/layout.scss';
+// 
+// *******************************************************************
+// FOOTER
+		@import 'index-page/footer-block/layout.scss';
+// 
+// -------------------------------------------------------------------
+// -------------------------------------------------------------------
+

@@ -1,0 +1,45 @@
+.descript {
+	
+	background: #eee;
+	&-line {
+
+	}
+
+	&-h1 {
+		font-size: 20px;
+		border-left: 3px solid #ccc;
+		line-height: 25px;
+		padding-left: 15px;
+		width: 400px;
+		text-transform: uppercase;
+	}
+	&-h2 {
+		margin-top: 30px;
+		width: 480px;
+		font-size: 12px;
+		line-height: 17px;
+	}
+
+	&-triggers {
+
+		margin-top: 60px;
+
+		&-item {
+			@include inline-mid(1);
+			margin-left: 15px;
+
+			font-size: 12px;
+			&:first-child {
+				margin-left: 0;
+			}
+			i {
+				@include inline-mid(1);
+			}
+
+			&-p {
+				@include inline-mid(1);
+
+			}
+		}
+	}
+}

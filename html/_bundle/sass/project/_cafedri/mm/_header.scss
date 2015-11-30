@@ -1,0 +1,49 @@
+.header {
+	.content {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	&-logo {
+		&-if {
+			@include inline-mid(1);
+			width: 50px;
+			height: 50px;
+			border-radius: 100%;
+			background:transparent url('http://placehold.it/100') center center no-repeat;
+		}
+		&-susu {
+			@include inline-mid(1);
+			width: 50px;
+			height: 50px;
+			border-radius: 100%;
+			background:transparent url('http://placehold.it/100') center center no-repeat;	
+		}
+	}
+	&-menu {
+		@include inline-mid(1);
+		width: 690px;
+		text-align: right;
+		padding-right: 15px;
+		
+		nav {
+
+			a {
+				font-size: 12px;
+				text-decoration: none;
+				margin-right: 15px;
+				color: $main-black;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+	&-number {
+		@include inline-mid(1);
+		padding-left: 15px;	
+		border-left: 2px solid #ccc;
+		text-align: right;
+		font-weight: bold;
+
+	}
+}

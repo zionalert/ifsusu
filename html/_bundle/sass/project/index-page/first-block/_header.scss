@@ -1,0 +1,115 @@
+.header {
+
+	.content {
+		border-bottom: 1px solid rgba($main-gray, .5);
+		padding-top: 30px;
+		padding-bottom: 30px;
+		font-size: 15px;
+		font-family: $font-roman;
+	}
+	&-logo {
+		@include inline-mid(1);
+		width: 53px;
+		height: 50px;
+		background-size: cover;
+		background: transparent url('../source/img/logo.png') center center no-repeat;
+	}
+	&-logo-susu {
+		@extend .header-logo;
+		width: 38px;
+		margin-left: 15px;
+		background: transparent url('../source/img/logo-susu.png') center center no-repeat;
+	}
+	a {
+		cursor: pointer;
+		text-decoration: none;
+	}
+	&-menu {
+		@include inline-mid(1);
+		width: 677px;
+		text-align: right;
+
+		nav {
+			ul {
+				li {
+					a {
+						text-decoration: none;
+						color: $main-black;
+						&:hover {
+							padding-top: 7px;
+							border-top: 2px solid $main-blue;
+							color: $main-blue;
+						}
+						&:active {
+							@extend &:hover;
+							color: $main-gray;
+							.fa {
+								color: $main-gray;
+							}
+							border-top: 2px solid $main-gray;
+						}		
+					}
+					@include inline-mid(1);
+					margin-top: -10px;
+					margin-right: 15px;
+					padding-top: 7px;
+					border-top: 2px solid rgba($main-blue, .0);
+
+					&:last-child {
+						margin-right: -15px;
+					}
+
+				}
+			}
+		}
+	}
+	&-login {
+		margin-left: 30px;
+		@include inline-mid(1);
+
+		&-button {
+			text-align: center;
+			width: 134px;
+			border-radius: 2px;
+			padding: 10px 30px;
+			border: 1px solid $main-blue;
+			color: $main-blue;
+			overflow: hidden;
+
+			span {
+				@include inline-bot(1);
+				transition: all .3s ;
+			}
+			.fa {
+				@include inline-bot(1);
+				margin-right: 10px;
+				line-height: 15px;
+				font-size: 15px;
+				width: 15px;
+				text-align: left;
+				ransition: all .3s ;
+			}
+			&:hover {
+				position: relative;
+
+				span {
+					
+					transition: all .2s ;
+					transform: translateY(-180%);
+				}
+				.fa {
+					transition: all .2s ;
+					transform: translateX(185%);
+				}
+			}
+			&:active {
+				@extend &:hover;
+
+				.fa {
+					color: $main-gray;
+				}
+				border: 1px solid  $main-gray;
+			}
+		}
+	}
+}
