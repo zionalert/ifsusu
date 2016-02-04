@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru" ng-app>
+<html lang="ru">
   <head>
     <title>Международный Факультет</title>
     <meta charset="utf-8">
@@ -13,20 +13,20 @@
     <meta name="author" content="">
     <meta name="copyright" content="(c)">
     <meta http-equiv="Reply-to" content="vladislavnurov@ya.ru">
-    <link rel="shortcut icon" href="source/img/favicon.ico">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <!-- SEO-->
     <meta name="keywords" content="">
     <meta name="description" content="">
     <!-- //SEO-->
-    <link rel="stylesheet" href="styles/index-page.css">
+    <link rel="stylesheet" href="css/main.css">
     <!-- font icons-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <script src="source/js/vendor/jq191.min.js"></script>
-    <script src="source/js/vendor/angular.min.js"></script>
-    <script src="source/js/angular/controllers.js"></script>
+    <script src="js/vendor/jq191.min.js"></script>
+    <script src="js/vendor/angular.min.js"></script>
+    <script src="js//angular/controllers.js"></script>
   </head>
-  <body >
-    <div class="mba-link"><img src="source/img/mba.png" alt="">
+  <body>
+    <div class="mba-link"><img src="img/mba.png" alt="">
       <div class="mba-link-h1">MBA<br>Центр</div>
     </div>
     <div class="first-block">
@@ -79,42 +79,10 @@
           <div class="content">
             <div class="feedback-priemnaya">
               <div class="feedback-priemnaya-h1">Ответим на все ваши вопросы</div>
-              <div class="feedback-priemnaya-button" ng-init="modalPriem = 0" ng-click="modalPriem = 1">
-                <p>Интернет-приёмная</p><img src="source/img/index-page/icons/internet-priem-button-icon.png" alt="">
+              <div class="feedback-priemnaya-button">
+                <p>Интернет-приёмная</p><img src="img/icons/internet-priem-button-icon.png" alt="">
               </div>
-              <div class="feedback-priemnaya-modal animate-hide" ng-hide="modalPriem === 0"  ng-show="modalPriem === 1">
-                <div class="triangle"></div>
-                <div class="feedback-priemnaya-modal-top">
-                  <div class="feedback-priemnaya-modal-top-h1">
-                    <i class="fa fa-comments-o"></i> Интернет-приёмная
-                  </div>
-                  <i class="fa fa-close" ng-click="modalPriem = 0"></i>
-                </div>
-                <div class="feedback-priemnaya-modal-form">
-                  <form action="" class="feedback-priemnaya-modal-form">
-                    <div class="feedback-priemnaya-modal-form-name">
-                      <p class="feedback-priemnaya-modal-form-p-name">Ваше имя:</p>
-                      <input name="name" type="name" class="feedback-priemnaya-modal-form-input-name">           
-                    </div>
-<!--                     <div class="feedback-priemnaya-modal-form-phone">
-                      <p class="feedback-priemnaya-modal-form-p-phone">Ваш телефон:</p>
-                      <input type="phone" class="feedback-priemnaya-modal-form-input-phone">           
-                    </div> -->
-                    <div class="feedback-priemnaya-modal-form-mail">
-                      <p class="feedback-priemnaya-modal-form-p-mail">Ваша почта или телефон*:</p>
-                      <input name="email" type="email" class="feedback-priemnaya-modal-form-input-mail">           
-                    </div>
-                    <div class="feedback-priemnaya-modal-form-message">
-                      <p class="feedback-priemnaya-modal-form-p-message">Ваше сообщение*:</p>
-                      <textarea name="message"  maxlength="3000" class="feedback-priemnaya-modal-form-input-message"></textarea>           
-                    </div>
-                    <a href="#" class="feedback-priemnaya-modal-form-confid">Политика конфиденциальности</a>
-                    <a href="#" class="feedback-priemnaya-modal-form-submit">
-                      <i class="fa fa-paper-plane-o"></i>  Отправить
-                    </a>
-                  </form>
-                </div>
-              </div>
+              <div class="feedback-priemnaya-modal"></div>
             </div>
             <div class="feedback-phone">
               <div class="feedback-phone-h1">Единый справочный телефон</div>
@@ -275,7 +243,7 @@
     </div>
     <div class="footer">
       <div class="content">
-        <div class="footer-logo"><img src="source/img/logo.png" alt=""><span>
+        <div class="footer-logo"><img src="img/logo.png" alt=""><span>
              
             Южно-Уральский Государственный Университет<br>Международный Факультет</span></div>
         <div class="footer-sitemap">
