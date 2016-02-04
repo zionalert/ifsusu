@@ -1,30 +1,56 @@
 .obuchenie {
-
+	padding: 30px 0;
 	.content {
-
+		padding: 30px;
+		@include material-shadow-mid(1);
+		background: lighten($main-white, 35.4%);
+		border-radius: 4px;
 	}
 
 	&-menu {
 		
 		&-item {
 			@include inline-mid(1);
-			width: 33%;
+			width: 30%;
+			margin-left: 43px;
+			&:first-child {
+				margin-left: 0;
+			}
 			text-decoration: none;
-			cursor: pointer;
-			font-size: 30px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid #ddd;
+			&:hover {
+				border-bottom: 1px solid lighten($main-blue, 15%);
+			}
 			&-icon {
-
+				@include inline-mid(1);
+				width: 50px;
+				height: 50px;
+				background: #999;
+				border-radius: 100%;
+			}
+			.mba-logo {
+				background:transparent url('../../../source/img/index-page/icons/mba-logo.png') left top no-repeat;
+				background-size: cover;
 			}
 			&-h1 {
-
+				@include inline-mid(1);
+				margin-left: 15px;
+				cursor: pointer;
+				font-size: 20px;
+				color: $main-black;
 			}
-			p {
-
+			i {
+				display: block;
+				padding-bottom: 5px;
+				font-size: 12px;
+				color: $main-gray;
+				font-style: normal;				
 			}
 		}
 	}
 	&-content {
-			
+			padding-top: 30px;
 	}
 
 	&-postupashka {

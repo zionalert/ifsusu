@@ -150,33 +150,51 @@
     <div id="obuchenie" class="obuchenie">
       <div class="content">
         <div class="obuchenie-menu">
-          <a href="#" class="obuchenie-menu-item">
+          <a href="#33" class="obuchenie-menu-item" ng-click="obuchenie = 1">
             <span class="obuchenie-menu-item-icon"></span>
             <span class="obuchenie-menu-item-h1">
+              <i>Информация</i>
               Поступающему
             </span>
           </a>
-          <a href="#" class="obuchenie-menu-item">
+          <a href="#1233" class="obuchenie-menu-item" ng-click="obuchenie = 2">
             <span class="obuchenie-menu-item-icon"></span>
             <span class="obuchenie-menu-item-h1">
+              <i>Информация</i>
               Студенту
             </span>
           </a>
-          <a href="#" class="obuchenie-menu-item">
-            <span class="obuchenie-menu-item-icon"></span>
+          <a href="#123" class="obuchenie-menu-item" ng-click="obuchenie = 3">
+            <span class="obuchenie-menu-item-icon mba-logo"></span>
             <span class="obuchenie-menu-item-h1">
-              <p>Программы бизнес школы</p><br>
+              <i>Программы бизнес-школы</i>
               MBA
             </span>
           </a>
         </div>
-        <div class="obuchenie-content">
-          <div class="obuchenie-postupashka">
+        <div class="obuchenie-content" ng-init="obuchenie = 1">
+          <div class="obuchenie-postupashka" ng-show="obuchenie === 1">
+            <div class="obuchenie-postupashka-sidebar">
+              
+            </div>
+            <div class="obuchenie-postupashka-content" >
+              Поступающему
+            </div>
+          </div>
+          <div class="obuchenie-postupashka" ng-show="obuchenie === 2">
             <div class="obuchenie-postupashka-sidebar">
               
             </div>
             <div class="obuchenie-postupashka-content">
+              Студенту
+            </div>
+          </div>
+          <div class="obuchenie-postupashka" ng-show="obuchenie === 3">
+            <div class="obuchenie-postupashka-sidebar">
               
+            </div>
+            <div class="obuchenie-postupashka-content">
+              MBA
             </div>
           </div>
         </div>
