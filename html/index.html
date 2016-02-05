@@ -147,24 +147,24 @@
         </div>
       </div>
     </div> -->
-    <div id="obuchenie" class="obuchenie">
+    <div id="obuchenie" class="obuchenie" ng-init="obuchenieMenu = 1">
       <div class="content">
         <div class="obuchenie-menu">
-          <a href="#33" class="obuchenie-menu-item" ng-click="obuchenie = 1">
+          <a href="#abiturientu" class="obuchenie-menu-item" ng-click="obuchenieMenu = 1">
             <span class="obuchenie-menu-item-icon"></span>
             <span class="obuchenie-menu-item-h1">
               <i>Информация</i>
               Поступающему
             </span>
           </a>
-          <a href="#1233" class="obuchenie-menu-item" ng-click="obuchenie = 2">
+          <a href="#studentu" class="obuchenie-menu-item" ng-click="obuchenieMenu = 2">
             <span class="obuchenie-menu-item-icon"></span>
             <span class="obuchenie-menu-item-h1">
               <i>Информация</i>
               Студенту
             </span>
           </a>
-          <a href="#123" class="obuchenie-menu-item" ng-click="obuchenie = 3">
+          <a href="#mba" class="obuchenie-menu-item" ng-click="obuchenieMenu = 3">
             <span class="obuchenie-menu-item-icon mba-logo"></span>
             <span class="obuchenie-menu-item-h1">
               <i>Программы бизнес-школы</i>
@@ -172,29 +172,140 @@
             </span>
           </a>
         </div>
-        <div class="obuchenie-content" ng-init="obuchenie = 1">
-          <div class="obuchenie-postupashka" ng-show="obuchenie === 1">
-            <div class="obuchenie-postupashka-sidebar">
+        <div class="obuchenie-content" >
+          <div class="obuchenie-content-block" ng-show="obuchenieMenu === 1">
+            <div class="obuchenie-content-block-sidebar">
+              <div class="obuchenie-content-block-sidebar-menu" ng-init="obuchenieMenuAbitrientMenu = 1">
+                <div class="obuchenie-content-block-sidebar-menu-h1">
+                  <i>Направления подготовки:</i>
+                </div> 
+                <a href="#99" class="obuchenie-content-block-sidebar-menu-item" ng-click="obuchenieMenuAbitrientMenu = 1">
+                  Международные отношения
+                </a>   
+              </div>
+            </div>
+
+            <!-- ////////////////////////////////////////////////////////////////////////////// -->
+            <!-- ////////////////////////////////////////////////////////////////////////////// -->
+            <!-- MO -->
+            <div class="obuchenie-content-block-content" ng-show="obuchenieMenuAbitrientMenu === 1" >
+              <div class="obuchenie-content-block-content-top">
+               
+                <!-- Название кафедры -->
+                <div class="obuchenie-content-block-content-top-h1">
+                  Международные отношения
+                </div>
+
+                <!-- Вступительные испытания -->
+                <div class="obuchenie-content-block-content-top-ege">
+                  Вступительные испытания: Русский язык, Математика, Обществознание
+                </div>
+              </div>
+
+              <!-- Чему научат -->
+              <div class="obuchenie-content-block-content-chemuuchat">
+                <div class="obuchenie-content-block-content-chemuuchat-h1">
+                  Чему научат
+                </div>
+                <div class="obuchenie-content-block-content-chemuuchat-descript">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illo corporis fugit illum at iste quidem quis culpa eius. Nam quasi quia accusamus. Odio unde beatae optio, possimus, commodi asperiores nobis eius doloremque mollitia dolores dicta consequatur iure! Aut fugiat, iste odit cupiditate porro laudantium id, dolore saepe aspernatur nihil!
+                </div>
+              </div>
+
+              <!-- Кафедра -->
+              <div class="obuchenie-content-block-content-cafedra">
+                <div class="obuchenie-content-block-content-cafedra-h1">
+                  Кафедра
+                </div>
+              </div>
+
+              <!-- Профили обучения -->
+              <div class="obuchenie-content-block-content-profiles">
+                <div class="obuchenie-content-block-content-profiles-h1">
+                  Профили обучения
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Общая информация -->
+              <div class="obuchenie-content-block-content-bottom">
+                <div class="obuchenie-content-block-content-bottom-info">
+                  <div class="obuchenie-content-block-content-bottom-info-h1">
+                    Общая информация:
+                  </div>
+                  <div class="left">
+                    <i>Выпускающая кафедра:</i>
+                    <i>Код направления обучения:</i>
+                    <i>Квалификация:</i>
+                  </div>
+                  <div class="right">
+                    <i>Международные отношения</i>
+                    <i>12.12.12</i>
+                    <i>Бакалавр</i>
+                  </div>
+
+                </div>
+                <div class="obuchenie-content-block-content-bottom-formi">
+                  <div class="obuchenie-content-block-content-bottom-formi-h1">
+                    Формы обучения:
+                  </div>
+                  <div class="left">
+                    <i>Очная:</i>
+                    <i>Заочная:</i>
+                    <i>Очно-заочная:</i>
+                  </div>
+                  <div class="right">
+                    <i>4 года</i>
+                    <i>5 лет</i>
+                    <i>3-3.5 года</i>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="obuchenie-content-block-content-cta">
               
             </div>
-            <div class="obuchenie-postupashka-content" >
-              Поступающему
+            <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+            <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+          </div>
+          <div class="obuchenie-content-block" ng-show="obuchenieMenu === 2">
+            <div class="obuchenie-content-block-sidebar">
+              <div class="obuchenie-content-block-sidebar-h1">
+                <i>Направления подготовки:</i>
+              </div>
+            </div>
+            <div class="obuchenie-content-block-content">
+              
             </div>
           </div>
-          <div class="obuchenie-postupashka" ng-show="obuchenie === 2">
-            <div class="obuchenie-postupashka-sidebar">
+          <div class="obuchenie-content-block" ng-show="obuchenieMenu === 3">
+            <div class="obuchenie-content-block-sidebar">
+              <div class="obuchenie-content-block-sidebar-menu">
+                <div class="obuchenie-content-block-sidebar-menu-h1">
+                  <i>Направления подготовки:</i>
+                </div>        
+              </div>
+            </div>
+            <div class="obuchenie-content-block-content">
               
-            </div>
-            <div class="obuchenie-postupashka-content">
-              Студенту
-            </div>
-          </div>
-          <div class="obuchenie-postupashka" ng-show="obuchenie === 3">
-            <div class="obuchenie-postupashka-sidebar">
-              
-            </div>
-            <div class="obuchenie-postupashka-content">
-              MBA
             </div>
           </div>
         </div>
