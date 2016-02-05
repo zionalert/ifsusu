@@ -2,7 +2,7 @@
 	padding: 30px 0;
 	background: #f5f5f5;
 	.content {
-		min-height: 700px;
+		
 
 		border-radius: 4px;
 		// background: lighten($main-white, 35.4%);
@@ -57,8 +57,7 @@
 	.obuchenie-content-first {
 		@include a-show-mid(1);
 		text-align: center;
-		padding: 30px 0;
-		padding: 160px 0;
+		padding-top: 30px;
 		&-item {
 			color: $main-black;
 			cursor: pointer;
@@ -112,7 +111,7 @@
 		@include a-show-mid(1);
 		&-block {
 
-@include a-show-mid(1);
+			@include a-show-mid(1);
 			&-sidebar {
 				@include a-show-mid(1);
 				@include inline-top(1);
