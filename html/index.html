@@ -26,9 +26,11 @@
     <script src="source/js/angular/controllers.js"></script>
   </head>
   <body >
+<!-- 
     <div class="mba-link"><img src="source/img/mba.png" alt="">
       <div class="mba-link-h1">MBA<br>Центр</div>
     </div>
+    --> 
     <div class="first-block">
       <div class="first-block-bg">
         <div class="header">
@@ -96,10 +98,6 @@
                       <p class="feedback-priemnaya-modal-form-p-name">Ваше имя:</p>
                       <input name="name" type="name" class="feedback-priemnaya-modal-form-input-name">           
                     </div>
-<!--                     <div class="feedback-priemnaya-modal-form-phone">
-                      <p class="feedback-priemnaya-modal-form-p-phone">Ваш телефон:</p>
-                      <input type="phone" class="feedback-priemnaya-modal-form-input-phone">           
-                    </div> -->
                     <div class="feedback-priemnaya-modal-form-mail">
                       <p class="feedback-priemnaya-modal-form-p-mail">Ваша почта или телефон*:</p>
                       <input name="email" type="email" class="feedback-priemnaya-modal-form-input-mail">           
@@ -124,47 +122,25 @@
         </div>
       </div>
     </div>
-<!--     <div id="obuchenie" class="education">
-      <div class="content">
-        <div class="education-h1">Поступающим</div>
-        <div class="education-items">
-          <div class="education-items-item">
-            <div class="education-items-item-h1">Бакалавриат</div>
-            <div class="education-items-item-h2">На базе 11 классов.</div>
-          </div>
-          <div class="education-items-item">
-            <div class="education-items-item-h1">Магистратура</div>
-            <div class="education-items-item-h2">На базе высшего образования.</div>
-          </div>
-          <div class="education-items-item">
-            <div class="education-items-item-h1">Бизнес-школа</div>
-            <div class="education-items-item-h2"> Lorem ipsum dolor sit amet.</div>
-          </div>
-          <div class="education-items-item">
-            <div class="education-items-item-h1">Профессиональная переподготовка</div>
-            <div class="education-items-item-h2"> Lorem ipsum dolor sit amet, consectetur adipisicing.</div>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <div id="obuchenie" class="obuchenie" ng-init="obuchenieMenu = 1">
+
+    <div id="obuchenie" class="obuchenie" ng-init="obuchenieMenu = 1; content = 0100">
       <div class="content">
         <div class="obuchenie-menu">
-          <a href="#abiturientu" class="obuchenie-menu-item" ng-click="obuchenieMenu = 1">
+          <a href="#abiturientu" class="obuchenie-menu-item" ng-click="obuchenieMenu = 1; content = 0100">
             <span class="obuchenie-menu-item-icon"></span>
             <span class="obuchenie-menu-item-h1">
               <i>Информация</i>
               Поступающему
             </span>
           </a>
-          <a href="#studentu" class="obuchenie-menu-item" ng-click="obuchenieMenu = 2">
+          <a href="#studentu" class="obuchenie-menu-item" ng-click="obuchenieMenu = 2; content = 0200">
             <span class="obuchenie-menu-item-icon"></span>
             <span class="obuchenie-menu-item-h1">
               <i>Информация</i>
               Студенту
             </span>
           </a>
-          <a href="#mba" class="obuchenie-menu-item" ng-click="obuchenieMenu = 3">
+          <a href="#mba" class="obuchenie-menu-item" ng-click="obuchenieMenu = 3; content = 0300">
             <span class="obuchenie-menu-item-icon mba-logo"></span>
             <span class="obuchenie-menu-item-h1">
               <i>Программы бизнес-школы</i>
@@ -173,27 +149,59 @@
           </a>
         </div>
         <div class="obuchenie-content" >
-          <div class="obuchenie-content-block" ng-show="obuchenieMenu === 1">
+
+
+          <!-- Абитуриенту -->
+
+
+          <!-- FIRST  -->
+          <div class="obuchenie-content-first" ng-show="obuchenieMenu === 1; content === 0100" > 
+            <div class="obuchenie-content-first-item" ng-click="obuchenieMenu = 100; content = 101">
+              <div class="obuchenie-content-first-item-icon"></div>
+              <div class="obuchenie-content-first-item-hr"></div>
+              <div class="obuchenie-content-first-item-h1">Направления подготовки</div>
+            </div>
+            <div class="obuchenie-content-first-item" ng-click="obuchenieMenu = 100; content = 201">
+              <div class="obuchenie-content-first-item-icon"></div>
+              <div class="obuchenie-content-first-item-hr"></div>
+              <div class="obuchenie-content-first-item-h1">Как поступить</div>
+            </div>
+            <div class="obuchenie-content-first-item" ng-click="obuchenieMenu =  100; content = 301">
+              <div class="obuchenie-content-first-item-icon"></div>
+              <div class="obuchenie-content-first-item-hr"></div>
+              <div class="obuchenie-content-first-item-h1">Списки зачисления</div>
+            </div>
+          </div>
+
+
+
+          <div class="obuchenie-content-block" ng-show="obuchenieMenu === 100;">
             <div class="obuchenie-content-block-sidebar">
-              <div class="obuchenie-content-block-sidebar-menu" ng-init="obuchenieMenuAbitrientMenu = 1">
+              <div class="obuchenie-content-block-sidebar-menu" >
                 <div class="obuchenie-content-block-sidebar-menu-h1">
                   <i>Направления подготовки:</i>
                 </div> 
-                <a href="#99" class="obuchenie-content-block-sidebar-menu-item" ng-click="obuchenieMenuAbitrientMenu = 1">
-                  Международные отношения
-                </a>   
+                <a href="#studentu/#mm" class="obuchenie-content-block-sidebar-menu-item" ng-click="obuchenieMenu = 100; content = 101">
+                  Менеджмент
+                </a>
+                <a href="#postuplenie" class="obuchenie-content-block-sidebar-menu-item-h2" ng-click="obuchenieMenu = 100; content = 201"> 
+                  Как поступить?
+                </a>
+                <a href="#spiski" class="obuchenie-content-block-sidebar-menu-item-h2" ng-click="obuchenieMenu =  100; content = 301"> 
+                  Списки зачисления
+                </a>
               </div>
             </div>
 
             <!-- ////////////////////////////////////////////////////////////////////////////// -->
             <!-- ////////////////////////////////////////////////////////////////////////////// -->
-            <!-- MO -->
-            <div class="obuchenie-content-block-content" ng-show="obuchenieMenuAbitrientMenu === 1" >
+            <!-- НАПРАВЛЕНИЯ ОБУЧЕНИЯ -->
+            <div class="obuchenie-content-block-content" ng-show="obuchenieMenu === 100; content === 101" >
               <div class="obuchenie-content-block-content-top">
                
                 <!-- Название кафедры -->
                 <div class="obuchenie-content-block-content-top-h1">
-                  Международные отношения
+                  Менеджмент
                 </div>
 
                 <!-- Вступительные испытания -->
@@ -280,13 +288,21 @@
                 </div>
               </div>
             </div>
-            <div class="obuchenie-content-block-content-cta">
-              
-            </div>
             <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
             <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+
+            <!-- Как поступить -->
+             <div class="obuchenie-content-block-content" ng-show="obuchenieMenu === 100; content === 201" >
+             Как поступить
+             </div>
+            <!-- Списки -->
+             <div class="obuchenie-content-block-content" ng-show="obuchenieMenu === 100; content === 301" >
+             Списки
+             </div>
           </div>
-          <div class="obuchenie-content-block" ng-show="obuchenieMenu === 2">
+
+          <!-- Студенту -->
+          <div class="obuchenie-content-block" ng-show="obuchenieMenu === 2; content === 0200">
             <div class="obuchenie-content-block-sidebar">
               <div class="obuchenie-content-block-sidebar-h1">
                 <i>Направления подготовки:</i>
@@ -296,7 +312,9 @@
               
             </div>
           </div>
-          <div class="obuchenie-content-block" ng-show="obuchenieMenu === 3">
+
+          <!-- MBA -->
+          <div class="obuchenie-content-block" ng-show="obuchenieMenu === 3; content === 0300">
             <div class="obuchenie-content-block-sidebar">
               <div class="obuchenie-content-block-sidebar-menu">
                 <div class="obuchenie-content-block-sidebar-menu-h1">
