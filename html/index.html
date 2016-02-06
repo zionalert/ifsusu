@@ -126,21 +126,21 @@
     <div id="obuchenie" class="obuchenie" ng-init="obuchenieMenu = 1; content = 0100">
       <div class="content">
         <div class="obuchenie-menu">
-          <a href="#obuchenie" class="obuchenie-menu-item" ng-click="obuchenieMenu = 1; content = 0100">
+          <a href="#obuchenie1" class="obuchenie-menu-item" ng-click="obuchenieMenu = 1; content = 0100">
             <span class="obuchenie-menu-item-icon"></span>
             <span class="obuchenie-menu-item-h1">
               <i>Информация</i>
               Поступающему
             </span>
           </a>
-          <a href="#obuchenie" class="obuchenie-menu-item" ng-click="obuchenieMenu = 2; content = 0200">
+          <a href="#obuchenie1" class="obuchenie-menu-item" ng-click="obuchenieMenu = 2; content = 0200">
             <span class="obuchenie-menu-item-icon"></span>
             <span class="obuchenie-menu-item-h1">
               <i>Информация</i>
               Студенту
             </span>
           </a>
-          <a href="#obuchenie" class="obuchenie-menu-item" ng-click="obuchenieMenu = 3; content = 0300">
+          <a href="#obuchenie1" class="obuchenie-menu-item" ng-click="obuchenieMenu = 3; content = 0300">
             <span class="obuchenie-menu-item-icon mba-logo"></span>
             <span class="obuchenie-menu-item-h1">
               <i>Программы бизнес-школы</i>
@@ -157,19 +157,13 @@
           <!-- FIRST  -->
           <div class="obuchenie-content-first" ng-show="obuchenieMenu === 1; content === 0100" > 
             <div class="obuchenie-content-first-item" ng-click="obuchenieMenu = 100; content = 101">
-              <div class="obuchenie-content-first-item-icon"></div>
-              <div class="obuchenie-content-first-item-hr"></div>
-              <div class="obuchenie-content-first-item-h1">Направления подготовки</div>
+              <p>Направления обучения</p>
             </div>
             <div class="obuchenie-content-first-item" ng-click="obuchenieMenu = 100; content = 201">
-              <div class="obuchenie-content-first-item-icon"></div>
-              <div class="obuchenie-content-first-item-hr"></div>
-              <div class="obuchenie-content-first-item-h1">Как поступить</div>
+              <p>Как поступить?</p>
             </div>
             <div class="obuchenie-content-first-item" ng-click="obuchenieMenu =  100; content = 301">
-              <div class="obuchenie-content-first-item-icon"></div>
-              <div class="obuchenie-content-first-item-hr"></div>
-              <div class="obuchenie-content-first-item-h1">Списки зачисления</div>
+              <p>Списки зачисления</p>
             </div>
           </div>
 
@@ -179,7 +173,7 @@
             <div class="obuchenie-content-block-sidebar">
               <div class="obuchenie-content-block-sidebar-menu" >
                 <div class="obuchenie-content-block-sidebar-menu-h1">
-                  <i>Направления подготовки:</i>
+                  <i>Направления обучения:</i>
                 </div> 
                 <a href="#studentu/#mm" class="obuchenie-content-block-sidebar-menu-item" ng-click="obuchenieMenu = 100; content = 101">
                   Менеджмент

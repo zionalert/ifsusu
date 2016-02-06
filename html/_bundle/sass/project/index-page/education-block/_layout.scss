@@ -1,17 +1,16 @@
 .obuchenie {
-	padding: 30px 0;
 	background: #f5f5f5;
-	.content {
-		
 
+	.content {
+		padding: 0 30px;
 		border-radius: 4px;
-		// background: lighten($main-white, 35.4%);
-		// @include material-shadow-mid(1);
+		min-height: 456px;
 	}
 	&-menu {
 		&-item {
 			width: 30%;
 			margin-left: 43px;
+			padding-top: 60px;
 			padding-bottom: 15px;
 			text-decoration: none;
 			border-bottom: 1px solid #ddd;
@@ -31,7 +30,7 @@
 				@include inline-mid(1);
 			}
 			.mba-logo {
-				background: transparent url('../../../source/img/index-page/icons/mba-logo.png') left top no-repeat;
+				background: transparent url('../source/img/index-page/icons/mba-logo.png') left top no-repeat;
 				background-size: cover;
 			}
 			&-h1 {
@@ -50,245 +49,217 @@
 			}
 		}
 	}
-
 	// FIRST
 	// 
 	// 
 	.obuchenie-content-first {
-		@include a-show-mid(1);
 		text-align: center;
-		padding-top: 30px;
+		@include a-show(1);
 		&-item {
-			color: $main-black;
+			position: relative;
+			width: 33.372%;
+			height: 300px;
+			margin-left: -5px;
 			cursor: pointer;
-			width: 200px;
+			color: $main-black;
+			background: #333;
 			@include inline-top(1);
-			margin-left: 100px;
+			p {
+
+				font-weight: normal;
+				font-size: 17px;
+				width: 150px;
+				height: 15px;
+				position: absolute;
+				top: 0;bottom: 0;right: 0;left: 0;
+				margin: auto;
+				color: #fff;
+			}
+			&:first-child {
+				margin-left: 0;
+				border-top-left-radius: 10px;
+			}
+			&:last-child {
+				border-top-right-radius: 10px;
+			}
 			&:first-child {
 				margin-left: 0;
 			}
-
-			&-icon {
-				display: block;
-				width: 150px;
-				height: 150px;
-				background: #999;
-				border-radius: 100%;
-				margin: auto;
-				@include material-shadow(1);
-			}
-			&-hr {
-				margin: auto;
-				margin-top: 25px;
-				width: 20px;
-				height: 4px;
-				background: #ddd;
-			}
-			&-h1 {
-				margin-top: 10px;
-				font-size: 17px;
-				font-family: $font-bold;
-
-			}
 			&:hover {
-
-				.obuchenie-content-first-item-icon { 
-					@include material-shadow-mid(1);
-					transform: translateY(-2px);
-				}
-				.obuchenie-content-first-item-h1 { 
-					color: $main-blue; 
-				}
 			}
 		}
 	}
-
-
-
-
 	&-content {
 		padding-top: 30px;
 		@include a-show-mid(1);
-		&-block {
 
+		&-block {
+			padding-bottom: 60px;
 			@include a-show-mid(1);
+
 			&-sidebar {
+				width: 30%;
 				@include a-show-mid(1);
 				@include inline-top(1);
-				width: 30%;
-				// border-right: 2px solid #ddd;
-				
+
 				&-menu {
 					&-h1 {
-						// &-icon {
-						// 	width: 50px;
-						// 	height: 50px;
-						// 	margin: auto;
-						// 	border-radius: 100%;
-						// 	background: #ddd;
-						// 	@include inline-mid(1);
-						// }
 						i {
-							color: $main-black;
 							font-size: 17px;
 							font-style: normal;
 							text-align: left;
+							color: $main-black;
 							@include inline-mid(1);
 						}
 					}
 					&-item {
+						font-size: 15px;
 						display: block;
+						margin-top: 15px;
 						text-decoration: none;
 						color: $main-gray;
-						margin-top: 15px;
-						font-size: 15px;
+
 						&:hover {
-							color: $main-blue;
 							transform: translateX(3px);
+							color: $main-blue;
 						}
 						&-h2 {
+							font-size: 17px;
 							display: block;
-							text-decoration: none;
 							margin-top: 15px;
+							text-decoration: none;
+							color: $main-black;
+
 							&:nth-child(3) {
 								margin-top: 120px;
 							}
-							font-size: 17px;
-							color: $main-black;
 							&:hover {
-								color: $main-blue;
 								transform: translateX(3px);
+								color: $main-blue;
 							}
 						}
-					}				
+					}
 				}
 			}
-
-
 			&-content {
-				@include inline-top(1);
 				width: 69.5%;
+				@include inline-top(1);
 				@include a-show-mid(1);
 
 				&-top {
-					
 					&-h1 {
-						color: $main-blue;
-						@include inline-bot(1);
 						font-size: 20px;
 						width: 30%;
-
+						color: $main-blue;
+						@include inline-bot(1);
 					}
 					&-ege {
-						text-align: right;
-						@include inline-bot(1);
 						font-size: 12px;
-						color: $main-gray;
 						width: 69%;
+						text-align: right;
+						color: $main-gray;
+						@include inline-bot(1);
 					}
-
 				}
 				&-chemuuchat {
-					@include inline-top(1);
-					text-align: justify;
 					width: 45%;
 					margin-top: 60px;
+					text-align: justify;
+					@include inline-top(1);
+
 					&-h1 {
-						border-left: 3px solid $main-blue;
 						padding-left: 15px;
+						border-left: 3px solid $main-blue;
 					}
 					&-descript {
-						margin-top: 15px;
 						font-size: 13px;
 						line-height: 17px;
+						margin-top: 15px;
 					}
-
 				}
 				&-cafedra {
-					@include inline-top(1);
-					margin-left: 9%;
 					width: 45%;
 					margin-top: 60px;
-					
-					&-h1 {
-						border-left: 3px solid $main-blue;
-						padding-left: 15px;
-					}
+					margin-left: 9%;
+					@include inline-top(1);
 
+					&-h1 {
+						padding-left: 15px;
+						border-left: 3px solid $main-blue;
+					}
 				}
 				&-profiles {
 					margin-top: 30px;
+
 					&-h1 {
-						border-left: 3px solid $main-blue;
 						padding-left: 15px;
+						border-left: 3px solid $main-blue;
 					}
 					&-item {
-						@include inline-top(1);
 						width: 32.6%;
 						margin-top: 15px;
 						text-align: center;
+						@include inline-top(1);
 
 						&-icon {
 							width: 100px;
 							height: 100px;
-							background: #999;
 							margin: auto;
 							border-radius: 100%;
+							background: #999;
 						}
 						&-h1 {
-							margin-top: 15px;
-							font-weight: bold;
 							font-size: 13px;
+							font-weight: bold;
+							margin-top: 15px;
 						}
 					}
 				}
 				&-bottom {
 					margin-top: 60px;
-					
+
 					&-info, &-formi {
-						width: 60%; 
-						@include inline-top(1);
 						font-size: 12px;
-						border-left: 3px solid lighten($main-gray, 20%);
+						width: 60%;
 						padding-left: 10px;
+						border-left: 3px solid lighten($main-gray, 20%);
+						@include inline-top(1);
+
 						&-h1 {
-							color: lighten($main-gray, 10%);
-							font-weight: bold;
 							font-size: 13px;
+							font-weight: bold;
+							color: lighten($main-gray, 10%);
 						}
 					}
-					&-formi { 
+					&-formi {
+						width: 33%;
 						margin-left: 5%;
 						text-align: left;
-						width: 33%;
 					}
 					.left {
+						width: 48%;
 						margin-top: 10px;
 						@include inline-top(1);
-						width: 48%;
 
 						i {
+							font-style: normal;
 							display: block;
 							margin-top: 5px;
-							font-style: normal;
-
 						}
 					}
-					.right { 
+					.right {
+						width: 49%;
 						margin-top: 10px;
 						@include inline-top(1);
-						width: 49%;
+
 						i {
-							color: lighten($main-gray, 10%);
+							font-style: normal;
 							display: block;
 							margin-top: 5px;
-							font-style: normal;
-
+							color: lighten($main-gray, 10%);
 						}
 					}
 				}
-
-
 			}
 		}
 	}
