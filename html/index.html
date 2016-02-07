@@ -221,16 +221,39 @@
           </div>
 
 
-          <!-- Sidebar -->
+          
           <div class="obuchenie-content-block" ng-show="obuchenieMenu === 100;">
+            <!-- Sidebar -->
             <div class="obuchenie-content-block-sidebar">
               <div class="obuchenie-content-block-sidebar-menu" >
                 <div class="obuchenie-content-block-sidebar-menu-h1">
                   <i>Направления обучения:</i>
-                </div> 
-                <a href="#studentu/#mm" class="obuchenie-content-block-sidebar-menu-item" ng-click="obuchenieMenu = 100; content = 101">
+                </div>
+
+                <!-- Направления -->
+                <a href="#abit" class="obuchenie-content-block-sidebar-menu-item" ng-click="obuchenieMenu = 100; content = 101">
                   Менеджмент
                 </a>
+                <a href="#abit" class="obuchenie-content-block-sidebar-menu-item" ng-click="obuchenieMenu = 100; content = 102">
+                  Информационные системы и технологии
+                </a>
+                <a href="#abit" class="obuchenie-content-block-sidebar-menu-item" ng-click="obuchenieMenu = 100; content = 103">
+                  Экономика
+                </a>
+                <a href="#abit" class="obuchenie-content-block-sidebar-menu-item" ng-click="obuchenieMenu = 100; content = 104">
+                  Инноватика
+                </a>
+                <a href="#abit" class="obuchenie-content-block-sidebar-menu-item" ng-click="obuchenieMenu = 100; content = 105">
+                  Международные отношения
+                </a>
+                <a href="#abit" class="obuchenie-content-block-sidebar-menu-item" ng-click="obuchenieMenu = 100; content = 106">
+                  Переводчик в сфере профессиональной коммуникации
+                </a>
+                <a href="#abit" class="obuchenie-content-block-sidebar-menu-item" ng-click="obuchenieMenu = 100; content = 107">
+                  Управление персоналом
+                </a>
+                <!-- end - направления -->
+
                 <a href="#postuplenie" class="obuchenie-content-block-sidebar-menu-item-h2" ng-click="obuchenieMenu = 100; content = 201"> 
                   Как поступить?
                 </a>
@@ -242,7 +265,8 @@
 
             <!-- ////////////////////////////////////////////////////////////////////////////// -->
             <!-- ////////////////////////////////////////////////////////////////////////////// -->
-            <!-- НАПРАВЛЕНИЯ ОБУЧЕНИЯ -->
+            <!-- Менеджмент -->
+            <!-- content = 101 -->
             <div class="obuchenie-content-block-content" ng-show="obuchenieMenu === 100; content === 101" >
               <div class="obuchenie-content-block-content-top">
                
@@ -354,7 +378,730 @@
                     <i>5 лет</i>
                     <i>3-3.5 года</i>
                   </div>
+                </div>
+              </div>
+            </div>
 
+
+            <!-- Инф системы -->
+            <!-- content = 102 -->
+            <div class="obuchenie-content-block-content" ng-show="obuchenieMenu === 100; content === 102" >
+              <div class="obuchenie-content-block-content-top">
+               
+                <!-- Название кафедры -->
+                <div class="obuchenie-content-block-content-top-h1">
+                  Информационные системы и технологии
+                </div>
+
+                <!-- Вступительные испытания -->
+                <div class="obuchenie-content-block-content-top-ege">
+                  Вступительные испытания (ЕГЭ): Русский язык, Математика, Обществознание
+                </div>
+              </div>
+
+              <!-- Чему научат -->
+              <div class="obuchenie-content-block-content-chemuuchat">
+                <div class="obuchenie-content-block-content-chemuuchat-h1">
+                  Чему научат
+                </div>
+                <div class="obuchenie-content-block-content-chemuuchat-descript">
+                  <li>Организовывать работу.</li>
+                  <li>Работать в команде с разными людьми и находить с ними общий язык.</li>
+                  <li>Быть разносторонним специалистом: владеть навыками финансиста, юриста, HR-а.</li>
+                  <li>Разрабатывать и реализовывать бизнес-планы и бизнес-проекты.</li>
+                  <li>Владеть искусством управления персоналом.</li>
+                </div>
+              </div>
+
+              <!-- Кафедра -->
+              <div class="obuchenie-content-block-content-cafedra">
+                <div class="obuchenie-content-block-content-cafedra-h1">
+                  Кафедра
+                </div>
+                <div class="obuchenie-content-block-content-cafedra-descript">
+                  <a href="http://if.susu.ru/he/spec/mn" target="_blank">
+                    Страница кафедры<i class="fa fa-external-link"></i> 
+                  </a>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-map-marker"></i>Адрес: <br>
+                    Ауд. 155, Восточное крыло, Дом №78, проспект Ленина, г. Челябинск 
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-phone"></i>Телефон: <br>
+                    +7 (351) 267-92-49
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-envelope-o"></i>E-Mail: <br>
+                    kaf_mm@mail.ru
+                  </div>
+                </div>
+              </div>
+
+              <!-- Профили обучения -->
+              <div class="obuchenie-content-block-content-profiles">
+                <div class="obuchenie-content-block-content-profiles-h1">
+                  Профили обучения
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Международный менеджмент
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Информационный менеджмент
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Антикризисное управление
+                  </div>
+                </div>
+              </div>
+
+              <!-- Общая информация -->
+              <div class="obuchenie-content-block-content-bottom">
+                <div class="obuchenie-content-block-content-bottom-info">
+                  <div class="obuchenie-content-block-content-bottom-info-h1">
+                    Общая информация:
+                  </div>
+                  <div class="left">
+                    <i>Выпускающая кафедра:</i>
+                    <i>Код направления обучения:</i>
+                    <i>Квалификация:</i>
+                  </div>
+                  <!-- Изменять это: -->
+                  <div class="right">
+                    <i>Международный менеджмент</i>
+                    <i>38.03.02</i>
+                    <i>Бакалавр Менеджмента</i>
+                  </div>
+
+                </div>
+                <!-- Формы обучения -->
+                <div class="obuchenie-content-block-content-bottom-formi">
+                  <div class="obuchenie-content-block-content-bottom-formi-h1">
+                    Формы обучения:
+                  </div>
+                  <div class="left">
+                    <i>Очная:</i>
+                    <i>Заочная:</i>
+                    <i>Очно-заочная:</i>
+                  </div>
+                  <div class="right">
+                    <i>4 года</i>
+                    <i>5 лет</i>
+                    <i>3-3.5 года</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Экономика -->
+            <!-- content = 103 -->
+            <div class="obuchenie-content-block-content" ng-show="obuchenieMenu === 100; content === 103" >
+              <div class="obuchenie-content-block-content-top">
+               
+                <!-- Название кафедры -->
+                <div class="obuchenie-content-block-content-top-h1">
+                  Экономика
+                </div>
+
+                <!-- Вступительные испытания -->
+                <div class="obuchenie-content-block-content-top-ege">
+                  Вступительные испытания (ЕГЭ): Русский язык, Математика, Обществознание
+                </div>
+              </div>
+
+              <!-- Чему научат -->
+              <div class="obuchenie-content-block-content-chemuuchat">
+                <div class="obuchenie-content-block-content-chemuuchat-h1">
+                  Чему научат
+                </div>
+                <div class="obuchenie-content-block-content-chemuuchat-descript">
+                  <li>Управлять банковскими рисками</li>
+                  <li>Организовывать банковскую деятельность</li>
+                </div>
+              </div>
+
+              <!-- Кафедра -->
+              <div class="obuchenie-content-block-content-cafedra">
+                <div class="obuchenie-content-block-content-cafedra-h1">
+                  Кафедра
+                </div>
+                <div class="obuchenie-content-block-content-cafedra-descript">
+                  <a href="http://if.susu.ru/he/spec/mn" target="_blank">
+                    Страница кафедры<i class="fa fa-external-link"></i> 
+                  </a>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-map-marker"></i>Адрес: <br>
+                    Ауд. 155, Восточное крыло, Дом №78, проспект Ленина, г. Челябинск 
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-phone"></i>Телефон: <br>
+                    +7 (351) 267-92-49
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-envelope-o"></i>E-Mail: <br>
+                    kaf_mm@mail.ru
+                  </div>
+                </div>
+              </div>
+
+              <!-- Профили обучения -->
+              <div class="obuchenie-content-block-content-profiles">
+                <div class="obuchenie-content-block-content-profiles-h1">
+                  Профили обучения
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item economic">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Банковское дело
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item economic">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Страховое дело
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item economic">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Финансы и кредит
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item economic">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Экономика организаций и предприятий
+                  </div>
+                </div>
+              </div>
+
+              <!-- Общая информация -->
+              <div class="obuchenie-content-block-content-bottom">
+                <div class="obuchenie-content-block-content-bottom-info">
+                  <div class="obuchenie-content-block-content-bottom-info-h1">
+                    Общая информация:
+                  </div>
+                  <div class="left">
+                    <i>Выпускающая кафедра:</i>
+                    <i>Код направления обучения:</i>
+                    <i>Квалификация:</i>
+                  </div>
+                  <!-- Изменять это: -->
+                  <div class="right">
+                    <i>Банковское дело</i>
+                    <i>38.03.01</i>
+                    <i>Бакалавр Экономики</i>
+                  </div>
+
+                </div>
+                <!-- Формы обучения -->
+                <div class="obuchenie-content-block-content-bottom-formi">
+                  <div class="obuchenie-content-block-content-bottom-formi-h1">
+                    Формы обучения:
+                  </div>
+                  <div class="left">
+                    <i>Очная:</i>
+                    <i>Заочная:</i>
+                    <i>Очно-заочная:</i>
+                  </div>
+                  <div class="right">
+                    <i>4 года</i>
+                    <i>5 лет</i>
+                    <i>3-3.5 года</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Инноватика -->
+            <!-- content = 104 -->
+            <div class="obuchenie-content-block-content" ng-show="obuchenieMenu === 100; content === 104" >
+              <div class="obuchenie-content-block-content-top">
+               
+                <!-- Название кафедры -->
+                <div class="obuchenie-content-block-content-top-h1">
+                  Инноватика
+                </div>
+
+                <!-- Вступительные испытания -->
+                <div class="obuchenie-content-block-content-top-ege">
+                  Вступительные испытания (ЕГЭ): Русский язык, Математика, Физика
+                </div>
+              </div>
+
+              <!-- Чему научат -->
+              <div class="obuchenie-content-block-content-chemuuchat">
+                <div class="obuchenie-content-block-content-chemuuchat-h1">
+                  Чему научат
+                </div>
+                <div class="obuchenie-content-block-content-chemuuchat-descript">
+                  Выпускники данного направления представляют собой специалистов системного профиля в сфере инновационных продуктов, процессов и технологий. Выпускники специализируются в области управления инновационными проектами, производственно-технологической, проектно-конструкторской и научно-исследовательской деятельности.
+                </div>
+              </div>
+
+              <!-- Кафедра -->
+              <div class="obuchenie-content-block-content-cafedra">
+                <div class="obuchenie-content-block-content-cafedra-h1">
+                  Кафедра
+                </div>
+                <div class="obuchenie-content-block-content-cafedra-descript">
+                  <a href="http://if.susu.ru/he/spec/mn" target="_blank">
+                    Страница кафедры<i class="fa fa-external-link"></i> 
+                  </a>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-map-marker"></i>Адрес: <br>
+                    Ауд. 155, Восточное крыло, Дом №78, проспект Ленина, г. Челябинск 
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-phone"></i>Телефон: <br>
+                    +7 (351) 267-92-49
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-envelope-o"></i>E-Mail: <br>
+                    kaf_mm@mail.ru
+                  </div>
+                </div>
+              </div>
+
+              <!-- Профили обучения -->
+              <div class="obuchenie-content-block-content-profiles">
+                <div class="obuchenie-content-block-content-profiles-h1">
+                  Lorem ipsum dolor.
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Общая информация -->
+              <div class="obuchenie-content-block-content-bottom">
+                <div class="obuchenie-content-block-content-bottom-info">
+                  <div class="obuchenie-content-block-content-bottom-info-h1">
+                    Общая информация:
+                  </div>
+                  <div class="left">
+                    <i>Выпускающая кафедра:</i>
+                    <i>Код направления обучения:</i>
+                    <i>Квалификация:</i>
+                  </div>
+                  <!-- Изменять это: -->
+                  <div class="right">
+                    <i>Международный менеджмент</i>
+                    <i>27.03.05</i>
+                    <i>Бакалавр техники и технологии</i>
+                  </div>
+
+                </div>
+                <!-- Формы обучения -->
+                <div class="obuchenie-content-block-content-bottom-formi">
+                  <div class="obuchenie-content-block-content-bottom-formi-h1">
+                    Формы обучения:
+                  </div>
+                  <div class="left">
+                    <i>Очная:</i>
+                    <i>Заочная:</i>
+                    <i>Очно-заочная:</i>
+                  </div>
+                  <div class="right">
+                    <i>4 года</i>
+                    <i>5 лет</i>
+                    <i>3-3.5 года</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Международные отношения -->
+            <!-- content = 105 -->
+            <div class="obuchenie-content-block-content" ng-show="obuchenieMenu === 100; content === 105" >
+              <div class="obuchenie-content-block-content-top">
+               
+                <!-- Название кафедры -->
+                <div class="obuchenie-content-block-content-top-h1">
+                  Международные отношения
+                </div>
+
+                <!-- Вступительные испытания -->
+                <div class="obuchenie-content-block-content-top-ege">
+                  Вступительные испытания (ЕГЭ): Русский язык, История, Обществознание
+                </div>
+              </div>
+
+              <!-- Чему научат -->
+              <div class="obuchenie-content-block-content-chemuuchat">
+                <div class="obuchenie-content-block-content-chemuuchat-h1">
+                  Чему научат
+                </div>
+                <div class="obuchenie-content-block-content-chemuuchat-descript">
+                  Обучение по данному направлению позволяет получить качественные знания по наиболее важным аспектам современной мировой политики, экономической дипломатии и международному бизнесу.
+                </div>
+              </div>
+
+              <!-- Кафедра -->
+              <div class="obuchenie-content-block-content-cafedra">
+                <div class="obuchenie-content-block-content-cafedra-h1">
+                  Кафедра
+                </div>
+                <div class="obuchenie-content-block-content-cafedra-descript">
+                  <a href="http://if.susu.ru/he/spec/mn" target="_blank">
+                    Страница кафедры<i class="fa fa-external-link"></i> 
+                  </a>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-map-marker"></i>Адрес: <br>
+                    Ауд. 155, Восточное крыло, Дом №78, проспект Ленина, г. Челябинск 
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-phone"></i>Телефон: <br>
+                    +7 (351) 267-92-49
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-envelope-o"></i>E-Mail: <br>
+                    kaf_mm@mail.ru
+                  </div>
+                </div>
+              </div>
+
+              <!-- Профили обучения -->
+              <div class="obuchenie-content-block-content-profiles">
+                <div class="obuchenie-content-block-content-profiles-h1">
+                  Lorem ipsum dolor.
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Общая информация -->
+              <div class="obuchenie-content-block-content-bottom">
+                <div class="obuchenie-content-block-content-bottom-info">
+                  <div class="obuchenie-content-block-content-bottom-info-h1">
+                    Общая информация:
+                  </div>
+                  <div class="left">
+                    <i>Выпускающая кафедра:</i>
+                    <i>Код направления обучения:</i>
+                    <i>Квалификация:</i>
+                  </div>
+                  <!-- Изменять это: -->
+                  <div class="right">
+                    <i>Международный менеджмент</i>
+                    <i>41.03.05</i>
+                    <i>Бакалавр в области международных отношений</i>
+                  </div>
+
+                </div>
+                <!-- Формы обучения -->
+                <div class="obuchenie-content-block-content-bottom-formi">
+                  <div class="obuchenie-content-block-content-bottom-formi-h1">
+                    Формы обучения:
+                  </div>
+                  <div class="left">
+                    <i>Очная:</i>
+                    <i>Заочная:</i>
+                    <i>Очно-заочная:</i>
+                  </div>
+                  <div class="right">
+                    <i>4 года</i>
+                    <i>5 лет</i>
+                    <i>3-3.5 года</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- МПереводчик в сфере профессиональной коммуникации -->
+            <!-- content = 106 -->
+            <div class="obuchenie-content-block-content" ng-show="obuchenieMenu === 100; content === 106" >
+              <div class="obuchenie-content-block-content-top">
+               
+                <!-- Название кафедры -->
+                <div class="obuchenie-content-block-content-top-h1">
+                  Переводчик в сфере профессиональной коммуникации
+                </div>
+
+                <!-- Вступительные испытания -->
+                <div class="obuchenie-content-block-content-top-ege">
+                  <!-- Вступительные испытания (ЕГЭ): Русский язык, История, Обществознание -->
+                </div>
+              </div>
+
+              <!-- Чему научат -->
+              <div class="obuchenie-content-block-content-chemuuchat">
+                <div class="obuchenie-content-block-content-chemuuchat-h1">
+                  Чему научат
+                </div>
+                <div class="obuchenie-content-block-content-chemuuchat-descript">
+                  Кафедра осуществляет подготовку студентов в области теории перевода, практики профессионально-ориентированного перевода, деловой корреспонденции, кросс-культурных коммуникаций.
+                </div>
+              </div>
+
+              <!-- Кафедра -->
+              <div class="obuchenie-content-block-content-cafedra">
+                <div class="obuchenie-content-block-content-cafedra-h1">
+                  Кафедра
+                </div>
+                <div class="obuchenie-content-block-content-cafedra-descript">
+                  <a href="http://if.susu.ru/he/spec/mn" target="_blank">
+                    Страница кафедры<i class="fa fa-external-link"></i> 
+                  </a>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-map-marker"></i>Адрес: <br>
+                    Ауд. 155, Восточное крыло, Дом №78, проспект Ленина, г. Челябинск 
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-phone"></i>Телефон: <br>
+                    +7 (351) 267-92-49
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-envelope-o"></i>E-Mail: <br>
+                    kaf_mm@mail.ru
+                  </div>
+                </div>
+              </div>
+
+              <!-- Профили обучения -->
+              <div class="obuchenie-content-block-content-profiles">
+                <div class="obuchenie-content-block-content-profiles-h1">
+                  Lorem ipsum dolor.
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Общая информация -->
+              <div class="obuchenie-content-block-content-bottom">
+                <div class="obuchenie-content-block-content-bottom-info">
+                  <div class="obuchenie-content-block-content-bottom-info-h1">
+                    Общая информация:
+                  </div>
+                  <div class="left">
+                    <i>Выпускающая кафедра:</i>
+                    <i>Код направления обучения:</i>
+                    <i>Квалификация:</i>
+                  </div>
+                  <!-- Изменять это: -->
+                  <div class="right">
+                    <i>Международные коммуникации</i>
+                    <i><!-- 41.03.05 --></i>
+                    <i>Переводчик в сфере профессиональной коммуникации</i>
+                  </div>
+
+                </div>
+                <!-- Формы обучения -->
+                <div class="obuchenie-content-block-content-bottom-formi">
+                  <div class="obuchenie-content-block-content-bottom-formi-h1">
+                    Формы обучения:
+                  </div>
+                  <div class="left">
+                    <i>Очная:</i>
+                    <i>Заочная:</i>
+                    <i>Очно-заочная:</i>
+                  </div>
+                  <div class="right">
+                    <i>4 года</i>
+                    <i>-</i>
+                    <i>-</i>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- Управление персоналом -->
+            <!-- content = 107 -->
+            <div class="obuchenie-content-block-content" ng-show="obuchenieMenu === 100; content === 107" >
+              <div class="obuchenie-content-block-content-top">
+               
+                <!-- Название кафедры -->
+                <div class="obuchenie-content-block-content-top-h1">
+                  Управление персоналом
+                </div>
+
+                <!-- Вступительные испытания -->
+                <div class="obuchenie-content-block-content-top-ege">
+                  Вступительные испытания (ЕГЭ): Русский язык, Математика, Обществознание
+                </div>
+              </div>
+
+              <!-- Чему научат -->
+              <div class="obuchenie-content-block-content-chemuuchat">
+                <div class="obuchenie-content-block-content-chemuuchat-h1">
+                  Чему научат
+                </div>
+                <div class="obuchenie-content-block-content-chemuuchat-descript">
+                  Выпускники образовательной программы «Управление персоналом» подготовлены к работе в службе управления персоналом государственных и муниципальных органов власти и управления, предприятий, учреждений и организаций всех форм собственности ,промышленности, торговле, на транспорте, банковской, страховой, туристской и других сферах, службах занятости и биржах труда.
+                  <br>
+                  Выпускники обладают знаниями и навыками, позволяющими разрабатывать системы отбора, оценки, развития и мотивации персонала, развивать корпоративную культуру, проводить кадровый аудит и оказывать консалтинговые услуги в сфере кадрового менеджмента.
+
+                </div>
+              </div>
+
+              <!-- Кафедра -->
+              <div class="obuchenie-content-block-content-cafedra">
+                <div class="obuchenie-content-block-content-cafedra-h1">
+                  Кафедра
+                </div>
+                <div class="obuchenie-content-block-content-cafedra-descript">
+                  <a href="http://if.susu.ru/he/spec/mn" target="_blank">
+                    Страница кафедры<i class="fa fa-external-link"></i> 
+                  </a>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-map-marker"></i>Адрес: <br>
+                    Ауд. 155, Восточное крыло, Дом №78, проспект Ленина, г. Челябинск 
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-phone"></i>Телефон: <br>
+                    +7 (351) 267-92-49
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-envelope-o"></i>E-Mail: <br>
+                    kaf_mm@mail.ru
+                  </div>
+                </div>
+              </div>
+
+              <!-- Профили обучения -->
+              <div class="obuchenie-content-block-content-profiles">
+                <div class="obuchenie-content-block-content-profiles-h1">
+                  Lorem ipsum dolor.
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+                <div class="obuchenie-content-block-content-profiles-item">
+                  <div class="obuchenie-content-block-content-profiles-item-icon"></div>
+                  <div class="obuchenie-content-block-content-profiles-item-h1">
+                    Lorem ipsum dolor.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Общая информация -->
+              <div class="obuchenie-content-block-content-bottom">
+                <div class="obuchenie-content-block-content-bottom-info">
+                  <div class="obuchenie-content-block-content-bottom-info-h1">
+                    Общая информация:
+                  </div>
+                  <div class="left">
+                    <i>Выпускающая кафедра:</i>
+                    <i>Код направления обучения:</i>
+                    <i>Квалификация:</i>
+                  </div>
+                  <!-- Изменять это: -->
+                  <div class="right">
+                    <i>Управление персоналом</i>
+                    <i>38.03.03</i>
+                    <i>Бакалавр Управления персоналом</i>
+                  </div>
+
+                </div>
+                <!-- Формы обучения -->
+                <div class="obuchenie-content-block-content-bottom-formi">
+                  <div class="obuchenie-content-block-content-bottom-formi-h1">
+                    Формы обучения:
+                  </div>
+                  <div class="left">
+                    <i>Очная:</i>
+                    <i>Заочная:</i>
+                    <i>Очно-заочная:</i>
+                  </div>
+                  <div class="right">
+                    <i>4 года</i>
+                    <i>5 лет</i>
+                    <i>3-3.5 года</i>
+                  </div>
                 </div>
               </div>
             </div>
