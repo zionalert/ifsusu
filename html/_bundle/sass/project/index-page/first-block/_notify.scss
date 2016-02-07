@@ -6,7 +6,7 @@
 	&-notify {
 		width: 100%;
 		cursor: default;
-
+		position: relative;
 		&-h1 {
 			font-family: $font-roman;
 			font-size: 20px;
@@ -29,23 +29,25 @@
 			}
 			width: 100%;
 			margin-top: 20px;
-			padding: 20px 25px;
+			padding: 20px;
 			border-radius: 4px;
 			border: 1px solid;
 			background: rgba(#fff, .5);
 
 			&-date {
-				@include inline-mid(1);
-				width: 20%;
+				@include inline-top(1);
+				width: 22%; 
 				font-family: $font-roman;
-				text-align: left;
 				
 				.day {
-				
-					font-size: 50px;
+					font-weight: bold;
+					font-size: 45px;
 					line-height: 40px;
+					margin-left: 6px;
+					text-align: right;
 				}
 				.month {
+					text-align: center;
 					margin-top: 5px;
 					font-size: 10px;
 					letter-spacing: 1px;
@@ -53,13 +55,165 @@
 				}
 			}
 			&-h2 {
-				text-align: center;
+				text-align: left;
 				text-transform: capitalize;
-				@include inline-mid(1);
-				margin-left: 25px;
-				width: 67%;
+				@include inline-top(1);
+				margin-left: 10px;
+				width: 72%;
 				font-size: 15px;
 				line-height: 20px;
+				.row {
+					width: 100%;
+					text-align: left;
+					i {
+						width: 10px;
+					}
+				}
+				&-time {
+					@include inline-top(1);
+					font-size: 10px;
+				}
+				&-place {
+					@include inline-top(1);
+					font-size: 10px;
+				}
+			}
+		}
+		&-modal {
+			cursor: default;
+			display: block;
+			padding: 20px;
+			position: absolute;
+			width: 670px;
+			height: 300px;
+			background: $main-white;
+			left: -703px;
+			top: -67px;
+			border-radius: 4px;
+			@include a-show(1);
+			@include material-shadow-big(1);
+			.triangle {
+				z-index: 10;
+				top: 50%; margin-top: 10px;
+				right: -10px;
+				position: absolute;
+				display: inline-block;
+				border: 10px solid $main-white;
+				background: #fff;
+				border-bottom-right-radius: 4px;
+				transform: rotate(-45deg);
+				@include material-shadow(1);
+			}
+			&-top {
+
+				position: relative;
+				padding-bottom: 15px;
+				border-bottom: 1px solid lighten($main-gray, 25%);
+				&-h1 {
+					
+					@include inline-mid(1);
+					i {
+						
+						color: $main-blue;
+					}
+					color: lighten($main-blue, 5%);
+					font-size: 25px;
+					font-family: $font-bold;
+				}
+				.fa-close {
+					cursor: pointer;
+					@include inline-mid(1);
+					position: absolute;
+					right: 0;
+					color: lighten($main-red, 10%);
+					&:hover {
+						color: lighten($main-red, 0%);
+						transform: translateY(-2px);
+					}
+
+				}
+			}
+			&-content {
+				padding-top: 15px;
+				.left {
+					@include inline-top(1);
+					width: 25%;
+					height: 50px;
+
+				}
+				.right {
+					@include inline-top(1);
+					width: 74%;
+					height: 50px;
+
+				}
+				p {
+					line-height: 17px;
+					font-size: 11px;
+					&:last-child {
+						margin-top: 20px;
+						color: $main-black;
+					}
+					.vk {
+						text-decoration: none;
+						color: $main-blue;
+						&:hover {
+							color: $main-red;
+							.fa.fa-vk {
+								color: $main-red;
+							}
+						}
+					}
+				}
+
+				&-info {
+
+					&-item {
+						
+						&:last-child {
+							margin-top: 25px;
+						}
+						&-h1 {
+							i {
+								text-align: center;
+								width: 20px;
+								padding-right: 5px;
+								color: lighten($main-red,15%);
+							}
+							font-family: $font-bold;
+							font-size: 20px;
+						}
+						&-h2 {
+							margin-top: 10px;
+							font-size: 12px;
+						}
+					}
+
+				}
+				&-cta {
+					a {
+						font-family: $font-light;
+						position: absolute;
+						bottom: 20px;
+						left: 20px;
+						text-decoration: none;
+						color: $main-white;
+						background: lighten($main-red,10%);
+						padding: 10px 20px;
+						font-size: 14px;
+						letter-spacing: .5px;
+						border-radius: 25px;
+						@include material-shadow(1);
+						&:hover {
+							@include hover-trans(1);
+						}
+						&:active {
+							box-shadow: none;
+							background: lighten($main-red,8%);
+						}
+					}
+
+				}
 			}
 		}
 	}

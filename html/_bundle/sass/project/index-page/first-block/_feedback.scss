@@ -108,7 +108,7 @@
 					@include inline-mid(1);
 				}
 				.fa-close {
-					font-size: 20px;
+					font-size: 15px;
 					position: absolute;
 					right: 0;
 					cursor: pointer;
@@ -133,7 +133,7 @@
 					font-size: 12px;
 					margin-top: 5px;
 					padding: 5px;
-					border: 1px solid #999;
+					border: 1px solid $main-gray;
 					border-radius: 2px;
 					outline: none;
 					width: 167px;

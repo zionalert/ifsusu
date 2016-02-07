@@ -13,7 +13,7 @@
 			padding-top: 60px;
 			padding-bottom: 15px;
 			text-decoration: none;
-			border-bottom: 1px solid #ddd;
+			border-bottom: 1px solid #e8e8e8;
 			@include inline-mid(1);
 
 			&:first-child {
@@ -26,8 +26,16 @@
 				width: 50px;
 				height: 50px;
 				border-radius: 100%;
-				background: #999;
+				background-size: cover;
 				@include inline-mid(1);
+				&-school {
+					background:transparent url('../source/img/index-page/icons/schoolboy.png') center center no-repeat;
+					background-size: cover;
+				}
+				&-student {
+					background:transparent url('../source/img/index-page/icons/studentboy.png') center center no-repeat;
+					background-size: cover;
+				}
 			}
 			.mba-logo {
 				background: transparent url('../source/img/index-page/icons/mba-logo.png') left top no-repeat;
@@ -62,8 +70,24 @@
 			margin-left: -5px;
 			cursor: pointer;
 			color: $main-black;
-			background: #333;
+			background:transparent url('http://lorempixel.com/500/500/city') center center no-repeat;
 			@include inline-top(1);
+			.bg {
+
+				top: 0;left: 0;right: 0;bottom: 0;
+				margin: auto;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background: rgba(#333, .8);
+				
+				&-first {
+					border-top-left-radius: 10px;
+				}
+				&-last {
+					border-top-right-radius: 10px;
+				}
+				}
 			p {
 
 				font-weight: normal;
@@ -81,11 +105,16 @@
 			}
 			&:last-child {
 				border-top-right-radius: 10px;
+
 			}
 			&:first-child {
 				margin-left: 0;
 			}
 			&:hover {
+				.bg {
+					@include material-shadow(1);
+					background: rgba(darken($main-blue,25%), .8);
+				}
 			}
 		}
 	}
@@ -175,6 +204,12 @@
 						font-size: 13px;
 						line-height: 17px;
 						margin-top: 15px;
+						li {
+							margin-top: 5px;
+							&:first-child {
+								margin-top: 0;
+							}
+						}
 					}
 				}
 				&-cafedra {
@@ -186,6 +221,31 @@
 					&-h1 {
 						padding-left: 15px;
 						border-left: 3px solid $main-blue;
+					}
+					&-descript {
+						font-size: 13px;
+						line-height: 17px;
+						margin-top: 15px;
+						a {
+							border-bottom: 1px dotted $main-gray;
+							text-decoration: none;
+							font-size: 15px;
+							color: $main-black;
+							i {
+								font-size: 12px;
+								color: $main-gray;
+								margin-left: 10px;
+							}
+						}
+						&-item {
+							i {
+
+								padding-right: 5px;
+							}
+							color: $main-gray;
+							margin-top: 15px;
+							line-height: 20px;
+						}
 					}
 				}
 				&-profiles {

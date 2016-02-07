@@ -64,14 +64,64 @@
               <h2 class="descript-h2">Мы не просто преподаём экономику и учим управлять,<br>мы делаем вам статус.</h2>
             </div>
             <div class="right-block">
-              <div class="descript-notify">
+              <div class="descript-notify" >
                 <div class="descript-notify-h1"><i class="fa fa-calendar-o"></i>Ближайшее событие</div>
-                <div class="descript-notify-descript">
-                  <div class="descript-notify-descript-date">
-                    <div class="day">08</div>
-                    <div class="month">Октября</div>
+                <div class="descript-notify-descript" >
+                  <div class="descript-notify-descript-date" ng-click="modalId = 1">
+                    <div class="day">21</div>
+                    <div class="month">Февраля</div>
                   </div>
-                  <div class="descript-notify-descript-h2">День открытых дверей</div>
+                  <div class="descript-notify-descript-h2" ng-click="modalId = 1">
+                    День открытых дверей 
+                    <div class="row">
+                      <div class="descript-notify-descript-h2-time">
+                        <i class="fa fa-clock-o"></i> 12:00
+                      </div>
+                      <div class="descript-notify-descript-h2-place">
+                        <i class="fa fa-map-marker"></i> Главный корпус, ауд. 160
+                      </div>                  
+                    </div>
+                  </div>
+                  <div class="descript-notify-modal" ng-show="modalId === 1">
+                    <div class="triangle"></div>
+                    <div class="descript-notify-modal-top">
+                      <div class="descript-notify-modal-top-h1">
+                        День открытых дверей
+                      </div>
+                      <i class="fa fa-close" ng-click="modalId = 0"></i>
+                    </div>
+                    <div class="descript-notify-modal-content">
+                      <div class="left">
+                        <div class="descript-notify-modal-content-info">
+                          <div class="descript-notify-modal-content-info-item">
+                            <div class="descript-notify-modal-content-info-item-h1">
+                              <i class="fa fa-map-marker"></i> Где:
+                            </div>
+                            <div class="descript-notify-modal-content-info-item-h2">
+                              Главный Корпус,<br> Ауд. 160
+                            </div>
+                          </div>
+                          <div class="descript-notify-modal-content-info-item">
+                            <div class="descript-notify-modal-content-info-item-h1">
+                              <i class="fa fa-clock-o"></i> Когда:
+                              </div>
+                            <div class="descript-notify-modal-content-info-item-h2">
+                              21 февраля, 12:00 
+                            </div>
+                          </div>
+                        </div>
+                        <div class="descript-notify-modal-content-cta">
+                            <a href="#submit">
+                              Записаться
+                            </a>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <p>Старшеклассникам  пора определиться с будущим: кем стать и куда пойти учиться. Решать эти вопросы в последний момент не получится: не позволит система ЕГЭ. До 1 марта необходимо определиться, какие предметы сдавать ЕГЭ в школе. Уже пора ознакомиться с ВУЗами, выбрать факультет, направление подготовки и узнать особенности правил приема. Поэтому так важно не пропустить дни открытых дверей в учебных заведениях, ведь именно в этот день у будущего абитуриента есть возможность собрать много полезной информации о вузе и его факультетах, чтобы сделать осознанный выбор своей будущей профессии.</p>
+                        <p>Мы приглашаем всех  желающих познакомиться  с Международным факультетом ЮУрГУ. На ваши вопросы  ответит  ответственный секретарь отборочной комиссии <br> <a href="https://vk.com/carolonline" target="_blank" class="vk"><i class="fa fa-vk"></i> Матковская Каролина Александровна</a>.</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -81,14 +131,14 @@
           <div class="content">
             <div class="feedback-priemnaya">
               <div class="feedback-priemnaya-h1">Ответим на все ваши вопросы</div>
-              <div class="feedback-priemnaya-button" ng-init="modalPriem = 0" ng-click="modalPriem = 1">
+              <div class="feedback-priemnaya-button" ng-init="modalPriem = 0" ng-click="modalId = 2; modalPriem = 1">
                 <p>Интернет-приёмная</p><img src="source/img/index-page/icons/internet-priem-button-icon.png" alt="">
               </div>
-              <div class="feedback-priemnaya-modal animate-hide" ng-hide="modalPriem === 0"  ng-show="modalPriem === 1">
+              <div class="feedback-priemnaya-modal " ng-hide="modalPriem === 0"  ng-show="modalId === 2">
                 <div class="triangle"></div>
                 <div class="feedback-priemnaya-modal-top">
                   <div class="feedback-priemnaya-modal-top-h1">
-                    <i class="fa fa-comments-o"></i> Интернет-приёмная
+                    <i class="fa fa-comments-o"></i>Интернет-приёмная
                   </div>
                   <i class="fa fa-close" ng-click="modalPriem = 0"></i>
                 </div>
@@ -127,14 +177,14 @@
       <div class="content">
         <div class="obuchenie-menu">
           <a href="#obuchenie1" class="obuchenie-menu-item" ng-click="obuchenieMenu = 1; content = 0100">
-            <span class="obuchenie-menu-item-icon"></span>
+            <span class="obuchenie-menu-item-icon obuchenie-menu-item-icon-school"></span>
             <span class="obuchenie-menu-item-h1">
               <i>Информация</i>
               Поступающему
             </span>
           </a>
           <a href="#obuchenie1" class="obuchenie-menu-item" ng-click="obuchenieMenu = 2; content = 0200">
-            <span class="obuchenie-menu-item-icon"></span>
+            <span class="obuchenie-menu-item-icon obuchenie-menu-item-icon-student"></span>
             <span class="obuchenie-menu-item-h1">
               <i>Информация</i>
               Студенту
@@ -157,18 +207,21 @@
           <!-- FIRST  -->
           <div class="obuchenie-content-first" ng-show="obuchenieMenu === 1; content === 0100" > 
             <div class="obuchenie-content-first-item" ng-click="obuchenieMenu = 100; content = 101">
+              <div class="bg bg-first"></div>
               <p>Направления обучения</p>
             </div>
             <div class="obuchenie-content-first-item" ng-click="obuchenieMenu = 100; content = 201">
+              <div class="bg"></div>
               <p>Как поступить?</p>
             </div>
-            <div class="obuchenie-content-first-item" ng-click="obuchenieMenu =  100; content = 301">
+            <a href="http://abit.susu.ru/rating/" target="_blank" class="obuchenie-content-first-item" ng-click="obuchenieMenu = 1; content = 0100">
+              <div class="bg bg-last"></div>
               <p>Списки зачисления</p>
-            </div>
+            </a>
           </div>
 
 
-
+          <!-- Sidebar -->
           <div class="obuchenie-content-block" ng-show="obuchenieMenu === 100;">
             <div class="obuchenie-content-block-sidebar">
               <div class="obuchenie-content-block-sidebar-menu" >
@@ -181,7 +234,7 @@
                 <a href="#postuplenie" class="obuchenie-content-block-sidebar-menu-item-h2" ng-click="obuchenieMenu = 100; content = 201"> 
                   Как поступить?
                 </a>
-                <a href="#spiski" class="obuchenie-content-block-sidebar-menu-item-h2" ng-click="obuchenieMenu =  100; content = 301"> 
+                <a href="http://abit.susu.ru/rating/" target="_blank" class="obuchenie-content-block-sidebar-menu-item-h2" off-ng-click="obuchenieMenu =  none; content = none"> 
                   Списки зачисления
                 </a>
               </div>
@@ -200,7 +253,7 @@
 
                 <!-- Вступительные испытания -->
                 <div class="obuchenie-content-block-content-top-ege">
-                  Вступительные испытания: Русский язык, Математика, Обществознание
+                  Вступительные испытания (ЕГЭ): Русский язык, Математика, Обществознание
                 </div>
               </div>
 
@@ -210,7 +263,11 @@
                   Чему научат
                 </div>
                 <div class="obuchenie-content-block-content-chemuuchat-descript">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illo corporis fugit illum at iste quidem quis culpa eius. Nam quasi quia accusamus. Odio unde beatae optio, possimus, commodi asperiores nobis eius doloremque mollitia dolores dicta consequatur iure! Aut fugiat, iste odit cupiditate porro laudantium id, dolore saepe aspernatur nihil!
+                  <li>Организовывать работу.</li>
+                  <li>Работать в команде с разными людьми и находить с ними общий язык.</li>
+                  <li>Быть разносторонним специалистом: владеть навыками финансиста, юриста, HR-а.</li>
+                  <li>Разрабатывать и реализовывать бизнес-планы и бизнес-проекты.</li>
+                  <li>Владеть искусством управления персоналом.</li>
                 </div>
               </div>
 
@@ -218,6 +275,23 @@
               <div class="obuchenie-content-block-content-cafedra">
                 <div class="obuchenie-content-block-content-cafedra-h1">
                   Кафедра
+                </div>
+                <div class="obuchenie-content-block-content-cafedra-descript">
+                  <a href="http://if.susu.ru/he/spec/mn" target="_blank">
+                    Страница кафедры<i class="fa fa-external-link"></i> 
+                  </a>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-map-marker"></i>Адрес: <br>
+                    Ауд. 155, Восточное крыло, Дом №78, проспект Ленина, г. Челябинск 
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-phone"></i>Телефон: <br>
+                    +7 (351) 267-92-49
+                  </div>
+                  <div class="obuchenie-content-block-content-cafedra-descript-item">
+                    <i class="fa fa-envelope-o"></i>E-Mail: <br>
+                    kaf_mm@mail.ru
+                  </div>
                 </div>
               </div>
 
@@ -229,19 +303,19 @@
                 <div class="obuchenie-content-block-content-profiles-item">
                   <div class="obuchenie-content-block-content-profiles-item-icon"></div>
                   <div class="obuchenie-content-block-content-profiles-item-h1">
-                    Lorem ipsum.
+                    Международный менеджмент
                   </div>
                 </div>
                 <div class="obuchenie-content-block-content-profiles-item">
                   <div class="obuchenie-content-block-content-profiles-item-icon"></div>
                   <div class="obuchenie-content-block-content-profiles-item-h1">
-                    Lorem ipsum.
+                    Информационный менеджмент
                   </div>
                 </div>
                 <div class="obuchenie-content-block-content-profiles-item">
                   <div class="obuchenie-content-block-content-profiles-item-icon"></div>
                   <div class="obuchenie-content-block-content-profiles-item-h1">
-                    Lorem ipsum.
+                    Антикризисное управление
                   </div>
                 </div>
               </div>
@@ -257,13 +331,15 @@
                     <i>Код направления обучения:</i>
                     <i>Квалификация:</i>
                   </div>
+                  <!-- Изменять это: -->
                   <div class="right">
-                    <i>Международные отношения</i>
-                    <i>12.12.12</i>
-                    <i>Бакалавр</i>
+                    <i>Международный менеджмент</i>
+                    <i>38.03.02</i>
+                    <i>Бакалавр Менеджмента</i>
                   </div>
 
                 </div>
+                <!-- Формы обучения -->
                 <div class="obuchenie-content-block-content-bottom-formi">
                   <div class="obuchenie-content-block-content-bottom-formi-h1">
                     Формы обучения:
@@ -407,24 +483,24 @@
           <div class="news-messages-h1"><i class="fa fa-bell-o"></i>Оповещения</div>
           <div class="news-messages-item">
             <div class="news-messages-item-date">
-              <div class="day">03</div>
-              <div class="month">Сентбяря</div>
+              <div class="day">23</div>
+              <div class="month"> Февраля</div>
             </div>
-            <div class="news-messages-item-h1">Шафутинский перевернет календарь</div>
+            <div class="news-messages-item-h1">Пересдача по Математике</div>
           </div>
           <div class="news-messages-item">
             <div class="news-messages-item-date">
               <div class="day">04</div>
-              <div class="month">Сентбяря</div>
+              <div class="month">Февраля</div>
             </div>
-            <div class="news-messages-item-h1">Шафутинский перевернул календарь</div>
+            <div class="news-messages-item-h1">Карантин до 14 февраля</div>
           </div>
           <div class="news-messages-item">
             <div class="news-messages-item-date">
-              <div class="day">03</div>
-              <div class="month">Сентбяря</div>
+              <div class="day">25</div>
+              <div class="month">Января</div>
             </div>
-            <div class="news-messages-item-h1">И снова 3 сентября</div>
+            <div class="news-messages-item-h1">Прошел День Открытых Дверей</div>
           </div>
         </div>
       </div>
