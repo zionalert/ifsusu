@@ -1,0 +1,39 @@
+.content {
+	margin: auto;
+	width: 1020px;
+	padding: 50px 30px;
+
+	@media screen and (max-width: 768px) {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+	}
+}
+.mba-link {
+
+		text-align: center;
+	cursor: pointer;
+	position: fixed;
+	right: 0;
+	width: 100px;
+	height: 100%;
+	background:transparent url('../source/img/mba-bg.png') left top no-repeat;
+	background-size: cover;
+	&-h1 {
+		line-height: 15px;
+		margin-top: 15px;
+		font-size: 15px;
+		color: #fff;
+		letter-spacing: .5px;
+		font-family: $font-bold;
+	}
+	img {
+		margin-top: 100px;
+		width: 50px;
+
+	}
+	box-shadow: 2px 0px 2px 5px rgba(#111, .2);
+	&:hover {
+		width: 105px;
+	}
+}

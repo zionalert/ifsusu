@@ -1,0 +1,50 @@
+.profiles {
+	
+	background: #eee;
+	&-left {
+		@include inline-top(1);
+		width: 700px;
+
+	}
+	&-right {
+
+		border-radius: 25px;
+		@include inline-top(1);
+		width: 250px;
+		height: 300px;
+		background: #ccc;
+
+	}
+
+	&-h1 {
+		font-size: 25px;
+	}
+	&-items {
+		margin-top: 75px;
+	}
+	&-item {
+		text-align: center;
+		width: 150px;
+		margin-left: 50px;
+		@include inline-top(1);
+		&-img {
+			border-radius: 25px;
+			width: 150px;
+			height: 150px;
+			background:transparent url('http://placehold.it/150') left top no-repeat;
+		}
+		&-h1 {
+			margin-top: 15px;
+		}
+	}
+	&-magistratura {
+		&-h1 {
+			margin-top: 55%;
+			text-align: center;
+		}
+		&-img {
+
+		}
+	}
+	
+}

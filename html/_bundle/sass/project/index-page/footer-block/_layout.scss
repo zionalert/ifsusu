@@ -1,0 +1,85 @@
+.footer {
+
+	font-size: 12px;
+	line-height: 20px;
+	font-family: $font-light;
+	letter-spacing: .5px;
+	color: $main-gray;
+	.content {
+		
+		
+		border-top: 1px solid rgba($main-gray, .5);
+	}
+
+	.column-3:nth-child(2) {
+		padding-left: 0;
+	}
+
+	&-logo {
+
+		@include inline-top(1);
+		width: 360px;
+		img {
+			@include inline-top(1);
+			height: 40px;
+
+		}
+		span {
+			@include inline-top(1);
+			margin-left: 15px;
+		}
+	}
+	&-sitemap {
+		width: 266.17px;
+		margin-left: 30px;
+		text-align: center;
+		@include inline-mid(1);
+		&-block {
+			@include inline-top(1);
+			text-align: left;
+			margin-left: 15px;
+			&:first-child {
+				margin-left: 0;
+			}
+			
+		}
+		&-item {
+			cursor: pointer;
+
+			&:hover {
+				color: $main-blue;
+			}
+		}
+
+	}
+	&-headera {
+		cursor: pointer;
+		float: right;
+		margin-left: 30px;
+		@include inline-mid(1);
+		a {
+			text-decoration: none;
+			color: $main-gray;
+		}
+		p {
+			font-size: 12px;
+			font-family: $font-roman;
+		}
+		&-logo {
+			margin-top: 7.5px;
+			font-family: $font-roman;
+			font-size: 15px;
+			padding-top: 7.5px;
+			border-top: 2px solid;
+			text-transform: uppercase;
+			letter-spacing: 1px;			
+		}
+		&:hover {
+			color: #333;
+			a {
+				color: #333;
+			}
+		}
+
+	}
+}

@@ -1,0 +1,46 @@
+.column-1 {
+	@include inline-top(1);
+}
+.column-2 {
+	@include inline-top(1);
+}
+.column-3 {
+	@include inline-top(1);
+
+	width: 33.0257%;
+	padding-left: 15px;
+	padding-right: 15px;
+	&:first-child {
+		padding-left: 0;
+	}
+	&:last-child {
+		padding-right: 0;
+	}
+}
+.column-4 {
+	@include inline-top(1);
+}
+.column-5 {
+	@include inline-top(1);
+}
+.column-6 {
+	@include inline-top(1);
+}
+.column-7 {
+	@include inline-top(1);
+}
+.column-8 {
+	@include inline-top(1);
+}
+.column-9 {
+	@include inline-top(1);
+}
+.column-10 {
+	@include inline-top(1);
+}
+.column-11 {
+	@include inline-top(1);
+}
+.column-12 {
+	@include inline-top(1);
+}

@@ -1,0 +1,30 @@
+.partners {
+
+	&-top {
+
+	}
+	&-bottom {
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	&-h1 {
+		font-size: 25px;
+		width: 24%;
+		@include inline-mid(1);
+		border-right: 2px solid #ccc;
+
+	}
+	&-h2 {
+		text-align: justify;
+		line-height: 20px;
+		width: 65%;
+		margin-left: 4%;
+		@include inline-mid(1);
+
+	}
+	img {
+		margin: 3px;
+		border-radius: 10px;
+	}
+}

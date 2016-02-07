@@ -1,0 +1,59 @@
+.teachers {
+
+	&-h1 {
+		font-size: 25px;
+	}
+
+	&-main {
+		@include inline-top(1);
+		width: 49.6%;
+		text-align: center;
+		
+		&-photo {
+			margin: 30px auto;
+			border-radius: 100%;
+			width: 150px;
+			height: 150px;
+			background:transparent url('http://placehold.it/150') center center no-repeat;
+
+		}
+		&-name {
+			font-size: 20px;
+			margin-top: 15px;
+
+		}
+		&-spec {
+			margin-top: 15px;
+			color: #999;
+			font-size: 12px;
+			letter-spacing: 1px;
+
+		}
+	}
+	&-other {
+		@include inline-top(1);
+		width: 49.6%;
+		text-align: left;
+
+		&-item {
+			margin-top: 50px;
+			&:first-child {
+				margin-top: 0;
+			}
+
+			&-name {
+
+			}
+			&-spec {
+				margin-top: 15px;
+				color: #999;
+				font-size: 12px;
+			}
+
+		}
+
+	}
+
+
+
+}

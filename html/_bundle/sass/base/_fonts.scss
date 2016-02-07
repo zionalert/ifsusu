@@ -1,0 +1,37 @@
+// @font-face {
+// 	font-family: 'helveticaBold';
+//     src:url(../../../../source/fonts/HelveticaNeueCyr-Bold.otf);
+// }
+// @font-face {
+// 	font-family: 'helveticaThin';
+//     src:url(../../../../source/fonts/HelveticaNeueCyr-Thin.otf);
+// }
+// @font-face {
+// 	font-family: 'helveticaRoman';
+//     src:url(../../../../source/fonts/HelveticaNeueCyr-Roman.otf);
+// }
+// @font-face {
+// 	font-family: 'helveticaLight';
+//     src:url(../../../../source/fonts/HelveticaNeueCyr-Light.otf);
+// }
+@font-face {
+	font-family: 'helveticaBold';
+    src:url(../source/fonts/HelveticaNeueCyr-Bold.otf);
+}
+@font-face {
+	font-family: 'helveticaThin';
+    src:url(../source/fonts/HelveticaNeueCyr-Thin.otf);
+}
+@font-face {
+	font-family: 'helveticaRoman';
+    src:url(../source/fonts/HelveticaNeueCyr-Roman.otf);
+}
+@font-face {
+	font-family: 'helveticaLight';
+    src:url(../source/fonts/HelveticaNeueCyr-Light.otf);
+}
+
+$font-bold  :  'helveticaBold'  ;
+$font-roman : 'helveticaRoman' ;
+$font-light : 'helveticaLight' ;
+$font-thin  :  'helveticaThin'  ;
