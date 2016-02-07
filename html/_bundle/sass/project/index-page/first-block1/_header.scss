@@ -21,15 +21,6 @@
 		margin-left: 15px;
 		background: transparent url('../source/img/logo-susu.png') center center no-repeat;
 	}
-	&-logo-sto {
-		@include inline-mid(1);
-		width: 53px;
-		height: 50px;
-		width: 50px;
-		margin-left: 15px;
-		background: transparent url('../source/img/5100.png') center center no-repeat;
-		background-size: contain;
-	}
 	a {
 		cursor: pointer;
 		text-decoration: none;
@@ -53,8 +44,7 @@
 							color: $main-blue;
 						}
 						&:active {
-							padding-top: 7px;
-							border-top: 2px solid $main-blue;
+							@extend &:hover;
 							color: $main-gray;
 							.fa {
 								color: $main-gray;
@@ -77,10 +67,10 @@
 		}
 	}
 	&-login {
-		margin-left: 30px;
 		position: absolute;
 		right: 0;
 		margin-top: 5px;
+		margin-left: 30px;
 		@include inline-mid(1);
 
 		&-button {
@@ -119,17 +109,8 @@
 				}
 			}
 			&:active {
-			position: relative;
+				@extend &:hover;
 
-				span {
-					
-					transition: all .2s ;
-					transform: translateY(-180%);
-				}
-				.fa {
-					transition: all .2s ;
-					transform: translateX(185%);
-				}
 				.fa {
 					color: $main-gray;
 				}

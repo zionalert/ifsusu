@@ -60,18 +60,6 @@
 	// FIRST
 	// 
 	// 
-	.one {
-			background:transparent url('../source/img/index-page/icons/naprav.png') center center no-repeat;
-			background-size: cover;
-			}
-	.two {
-			background:transparent url('../source/img/index-page/icons/how.png') center center no-repeat;
-			background-size: cover;
-			}
-	.three {
-			background:transparent url('../source/img/index-page/icons/list.png') center center no-repeat;
-			background-size: cover;
-			}
 	.obuchenie-content-first {
 		text-align: center;
 		@include a-show(1);
@@ -82,8 +70,9 @@
 			margin-left: -5px;
 			cursor: pointer;
 			color: $main-black;
-
+			background:transparent url('http://lorempixel.com/500/500/city') center center no-repeat;
 			@include inline-top(1);
+
 			.bg {
 
 				top: 0;left: 0;right: 0;bottom: 0;
@@ -91,7 +80,7 @@
 				position: absolute;
 				width: 100%;
 				height: 100%;
-				background: rgba(#333, .6);
+				background: rgba(#333, .8);
 				
 				&-first {
 					border-top-left-radius: 10px;
@@ -129,7 +118,6 @@
 				}
 			}
 		}
-
 	}
 	&-content {
 		padding-top: 30px;
@@ -255,7 +243,7 @@
 						&-item {
 							i {
 
-								padding-right: 10px;
+								padding-right: 5px;
 							}
 							color: $main-gray;
 							margin-top: 15px;
@@ -339,3 +327,5 @@
 		}
 	}
 }
+
+

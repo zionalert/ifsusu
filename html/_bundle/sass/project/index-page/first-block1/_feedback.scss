@@ -69,12 +69,7 @@
 			}
 			&:active {
 				background: rgba($main-black, .06);
-				p {
-					transform: translateY(200%);
-				}
-				img {
-					transform: translateY(0%);
-				}
+				@extend &:hover;
 			}
 		}
 		&-modal {
