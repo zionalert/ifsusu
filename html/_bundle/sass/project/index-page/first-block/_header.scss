@@ -1,6 +1,7 @@
 .header {
 
 	.content {
+		position: relative;
 		border-bottom: 1px solid rgba($main-gray, .5);
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -26,7 +27,9 @@
 	}
 	&-menu {
 		@include inline-mid(1);
-		width: 677px;
+		position: absolute;
+		right: 175px;
+		margin-top: 17px;
 		text-align: right;
 
 		nav {
@@ -64,6 +67,9 @@
 		}
 	}
 	&-login {
+		position: absolute;
+		right: 0;
+		margin-top: 5px;
 		margin-left: 30px;
 		@include inline-mid(1);
 

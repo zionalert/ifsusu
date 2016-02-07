@@ -1,0 +1,29 @@
+.contact {
+
+	
+	
+	&-h1 {
+		font-size: 25px;
+	}
+	&-item {
+		margin-top: 30px;
+		@include inline-top(1);
+		font-size: 15px;
+		width: 15%;
+		margin-left: 25px;
+		&-h1 {
+			font-family: $font-bold;
+			.fa {
+				color: $main-red;
+				padding-right: 10px;
+			}
+		}
+		&-h2 {
+			margin-top: 15px;
+		}
+	}
+}
+.adres {
+	width: 20%;
+	margin-left: 0;
+}

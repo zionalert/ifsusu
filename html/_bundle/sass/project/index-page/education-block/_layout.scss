@@ -72,6 +72,7 @@
 			color: $main-black;
 			background:transparent url('http://lorempixel.com/500/500/city') center center no-repeat;
 			@include inline-top(1);
+
 			.bg {
 
 				top: 0;left: 0;right: 0;bottom: 0;
@@ -326,3 +327,5 @@
 		}
 	}
 }
+
+
