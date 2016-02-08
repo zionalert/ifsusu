@@ -1,15 +1,18 @@
 .cta {
+	z-index: 1000000;
+	position: relative;
 	margin-top: -15px;
 	.content {
 		padding: 0;
 	}
 	&-block {
 		padding: 30px 15px;
-		border-radius: 4px;
+		border-radius: 10px;
 		margin: auto;
 		width: 80%;
 		background: $main-blue;
 		border-bottom: 4px solid darken($main-blue, 15%);
+		@include material-shadow(1);
 	}
 
 	&-h1 {
@@ -36,8 +39,24 @@
 			}
 		}
 		input[type="submit"] {
+			// @include text-shadow(1);
+			@include material-shadow(1);
+			padding-bottom: 8px;
 			border: none;
+			color: $main-white;
+			font-family: $font-light;
+			letter-spacing: 1px;
+			background: darken($green, 0%);
+			border-bottom: 4px solid darken($green, 5%);
+			&:hover {
+				transform: translateY(1px);
+			}
+			&:active {
+				@include material-shadow(1);
 
+				transform: translateY(3px);
+				@include material-shadow-a(1);
+			}
 		}
 	}
 }
