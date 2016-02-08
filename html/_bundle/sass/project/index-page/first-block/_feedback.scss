@@ -111,6 +111,9 @@
 					font-size: 17px;
 					color: $main-blue;
 					@include inline-mid(1);
+					.fa {
+						padding-right: 5px;
+					}
 				}
 				.fa-close {
 					font-size: 15px;
