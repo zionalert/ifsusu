@@ -1,6 +1,9 @@
 .descript {
-	
-	background: #eee;
+	z-index: 100;
+	background:transparent url('../../../source/img/mm/mm-bg.png') center 30% no-repeat;
+	background-size: cover;
+	color: $main-white;
+	text-shadow: 0px 1px 1px rgba($main-black, 1);
 	&-line {
 
 	}

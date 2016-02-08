@@ -14,7 +14,9 @@
 			border-radius: 100%;
 			width: 150px;
 			height: 150px;
-			background:transparent url('http://placehold.it/150') center center no-repeat;
+			background:transparent url('https://pp.vk.me/c627926/v627926933/20e92/zfXtQ4bofp0.jpg') 50% 20% no-repeat;
+			background-size: 200%;
+			@include material-shadow(1);
 
 		}
 		&-name {
