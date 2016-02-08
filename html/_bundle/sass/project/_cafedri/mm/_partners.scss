@@ -4,7 +4,6 @@
 
 	}
 	&-bottom {
-		margin-top: 50px;
 		text-align: center;
 	}
 
@@ -23,8 +22,23 @@
 		@include inline-mid(1);
 
 	}
-	img {
-		margin: 3px;
-		border-radius: 10px;
+	&-bottom {
+		.unilever,.chtz {
+			img {
+			width: 100px;
+			height: 100px;
+			}
+
+		}
+		&-icon {
+			@include inline-mid(1);
+			
+			img {
+				box-sizing: content-box;
+				width: 150px;
+				padding: 50px;
+			}
+
+		}
 	}
 }

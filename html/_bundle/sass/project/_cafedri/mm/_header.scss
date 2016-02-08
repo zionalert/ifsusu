@@ -41,7 +41,8 @@
 						color: $main-blue;
 					}
 					&:active {
-						@extend &:hover;
+						padding-top: 7px;
+						border-top: 2px solid $main-blue;
 						color: $main-gray;
 						.fa {
 							color: $main-gray;
