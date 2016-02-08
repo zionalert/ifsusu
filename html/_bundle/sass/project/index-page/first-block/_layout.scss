@@ -1,7 +1,7 @@
 .descript {
 	.content {
-		padding-top: 100px;
-		padding-bottom: 100px
+		padding-top: 50px;
+		padding-bottom: 50px;
 	}
 }
 .first-block {
@@ -9,7 +9,8 @@
 
 	&-bg {
 		padding-bottom: 30px;
-		background: transparent url('../source/img/index-page/first-block/bg-big.png') 49% 50% no-repeat
+		background: transparent url('../source/img/index-page/first-block/bg-big.png') 49% 50% no-repeat;
+		// background-size: cover;
 	}
 }
 .descript {
@@ -18,10 +19,10 @@
 	// 
 	.left-block {
 		width: 70%;
-		@include inline-top(1)
+		@include inline-mid(1)
 	}
 	.right-block {
 		width: 29.53%;
-		@include inline-top(1)
+		@include inline-mid(1)
 	}
 }
