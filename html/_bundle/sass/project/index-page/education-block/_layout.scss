@@ -275,13 +275,40 @@
 						margin-top: 15px;
 						text-align: center;
 						@include inline-top(1);
+						.international {
+								background:transparent url('../source/img/index-page/icons/management/inter.png') center center no-repeat;
+								background-size: cover;
+							}
+						.informanag {
+								background:transparent url('../source/img/index-page/icons/management/inform.png') center center no-repeat;
+								background-size: cover;
+							}
+						.anticris {
+								background:transparent url('../source/img/index-page/icons/management/anticris.png') center center no-repeat;
+								background-size: cover;
+							}
+						.bankovskoe {
+								background:transparent url('../source/img/index-page/icons/economic/bank.png') center center no-repeat;
+								background-size: cover;
+							}
+						.insurance {
+								background:transparent url('../source/img/index-page/icons/economic/strahov.png') center center no-repeat;
+								background-size: cover;
+							}
+						.finance {
+								background:transparent url('../source/img/index-page/icons/economic/finance.png') center center no-repeat;
+								background-size: cover;
+							}
+						.econorg {
+								background:transparent url('../source/img/index-page/icons/economic/econorgan.png') center center no-repeat;
+								background-size: cover;
+							}
 
 						&-icon {
 							width: 100px;
 							height: 100px;
 							margin: auto;
 							border-radius: 100%;
-							background: #999;
 						}
 						&-h1 {
 							font-size: 13px;
